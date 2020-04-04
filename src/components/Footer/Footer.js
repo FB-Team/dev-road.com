@@ -1,4 +1,5 @@
 import React from 'react'
+import './Footer.css'
 
 class Footer extends React.Component{
   render () {
@@ -6,9 +7,9 @@ class Footer extends React.Component{
       <footer id="Footer">
         <div class="copyright">&copy; 2020 Roadmap4devs</div>
         <div class="rel-sites">
-          <span class="rel-sites-title">
-            Так же вас может заинтересовать:
-          </span>
+          <div class="rel-sites-title">
+            Вас так же может заинтересовать:
+          </div>
           <div class="rel-sites-list">
             <a href="https://www.freecodecamp.org/">FreeCodeCamp</a>
             <a href="https://www.codewars.com/">Codewars</a>
