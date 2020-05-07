@@ -10,3 +10,6 @@ a {
 a:hover{
   color: #FADAF5;
 }
+.horizontal-flex{
+  display: flex;
+}
