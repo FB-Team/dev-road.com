@@ -15,4 +15,6 @@ class Tile extends React.Component {
     )
   }
 }
+/* TODO: FINISH THE TILE CLASS 
+*/
 export default Tile
