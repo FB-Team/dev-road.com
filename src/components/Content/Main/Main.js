@@ -10,7 +10,7 @@ class Main extends React.Component {
   render () {
     return (
       <Router>
-          <Route path="/" component={StartProg}/>
+          <Route exact path={'/'} component={StartProg}/>
           <Route path={'/system-prog'} component={SystemProg}/>
           <Route path={'/application-prog'} component={ApplicationProg}/>
           <Route path={'/web-prog'} component={WebProg}/>
