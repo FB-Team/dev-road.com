@@ -1,7 +1,6 @@
 import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom'
 import React from 'react'
-import Tile from './Tile/Tile.js'
-import
+import Tile from '../Tile/Tile.js'
 
 class ApplicationProg extends React.Component {
   render () {

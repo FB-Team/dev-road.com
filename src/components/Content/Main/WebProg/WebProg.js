@@ -1,6 +1,6 @@
 import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom'
 import React from 'react'
-import Tile from './Tile/Tile.js'
+import Tile from '../Tile/Tile.js'
 
 class WebProg extends React.Component {
   render () {
