@@ -3,13 +3,14 @@
   padding: 0;
 }
 
-a {
+/*a {
   color: white;
 }
 
 a:hover{
   color: #FADAF5;
 }
+*/
 .horizontal-flex{
   display: flex;
 }
