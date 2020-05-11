@@ -9,7 +9,7 @@ class  App extends React.Component {
     return (
     <div className="App">
       <Header />
-      <div class="horizontal-flex">
+      <div className="horizontal-flex">
         <Sidebar />
         <Content />
       </div>
