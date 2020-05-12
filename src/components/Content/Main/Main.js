@@ -1,5 +1,5 @@
 import React from 'react'
-import './Main.css'
+import s from './Main.module.css'
 import { BrowserRouter as Router, Route} from 'react-router-dom'
 import SystemProg from './SystemProg/SystemProg.js'
 import ApplicationProg from './ApplicationProg/ApplicationProg.js'

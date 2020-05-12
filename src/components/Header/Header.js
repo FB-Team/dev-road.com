@@ -1,15 +1,15 @@
 import React from 'react'
-import './Header.css'
+import s from './Header.module.css'
 class Header extends React.Component{
   render () {
     return (
-      <header className='Header'>
-          <span className="title"><h1>Roadmap4devs</h1></span>
-          <nav className="navbar">
-          <a className="navlink" href="#">Контакты</a>
-          <a className="navlink" href="#">Про нас</a>
-          <a className="navlink" href="#">Поддержать проект</a>
-          <a className="navlink" href="#">Вопросы</a>
+      <header className={s.Header}>
+          <span className={s.title}><h1>Roadmap4devs</h1></span>
+          <nav className={s.navbar}>
+          <a className={s.navlink} href="#">Контакты</a>
+          <a className={s.navlink} href="#">Про нас</a>
+          <a className={s.navlink} href="#">Поддержать проект</a>
+          <a className={s.navlink} href="#">Вопросы</a>
           </nav>
       </header>
     )

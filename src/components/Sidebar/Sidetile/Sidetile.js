@@ -1,13 +1,9 @@
 import React from 'react'
-import './Sidetile.css'
+import s from './Sidetile.module.css'
 class Sidetile extends React.Component{
-  constructor(props){
-    super(props);
-  }
   render (){
-    console.log('this.props.descrption = ' + this.props.description)
     return (
-      <div id="Sidetile"><button className="sidelink">{this.props.description}</button></div>
+      <div id="Sidetile"><button className={s["sidelink"]}>{this.props.description}</button></div>
     )
   }
 }

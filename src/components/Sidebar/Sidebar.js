@@ -1,6 +1,6 @@
 import React from 'react'
 import Sidetile from './Sidetile/Sidetile.js'
-import './Sidebar.css'
+import s from './Sidebar.module.css'
 class Sidebar extends React.Component{
   render(){
     return (
