@@ -16,6 +16,3 @@ class Tile extends React.Component {
   }
 }
 export default Tile
-/* TODO: 1) FINISH THE TILE CLASS
-2) Create route sections for the Main
-*/
