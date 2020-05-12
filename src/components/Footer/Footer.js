@@ -4,7 +4,7 @@ import s from './Footer.module.css'
 class Footer extends React.Component{
   render () {
     return (
-      <footer id="Footer">
+      <footer className={s.Footer}>
         <div className={s.copyright}>&copy; 2020 Roadmap4devs</div>
         <div className={s["rel-sites"]}>
           <div className={s["rel_sites-title"]}>

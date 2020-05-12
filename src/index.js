@@ -15,8 +15,7 @@ ReactDOM.render(
 // unregister() to register() below. Note this comes with some pitfalls.
 // Learn more about service workers: https://bit.ly/CRA-PWA
 serviceWorker.unregister();
-/* TODO: 1) ИСПРАВИТЬ КОНПКУ ПЕРЕХОДА НАЗАД (MAIN.JS) +
-TODO: 2) CSS МОДУЛИ+
-TODO: 3) СТИЛИЗАЦИЯ ОКНА И ПЛИТОЧЕК
-TODO: 4) РЕФАКТОРИНГ РЕНДЕРИНГА ПЛИТОЧЕК (СОЗДАНИЕ ЕДИНОГО КОМПОНЕНТА СОЗДАЮЩЕГО ОСТАЛЬНЫЕ ПЛИТОЧКИ ПО НЕОБХОДИМОСТИ)
+/*
+TODO: 1) СТИЛИЗАЦИЯ ОКНА И ПЛИТОЧЕК
+TODO: 2) РЕФАКТОРИНГ РЕНДЕРИНГА ПЛИТОЧЕК (СОЗДАНИЕ ЕДИНОГО КОМПОНЕНТА СОЗДАЮЩЕГО ОСТАЛЬНЫЕ ПЛИТОЧКИ ПО НЕОБХОДИМОСТИ) +-
  */
