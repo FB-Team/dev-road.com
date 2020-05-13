@@ -1,7 +1,7 @@
-const QAEngeneers = {
+const QAEngeneer = {
   meta: {
     hasChildren: true,
-    path:        '/application-prog/desktop/qaengeneers'
+    path:        '/application-prog/desktop/qaengeneer'
   },
   data:{
     profdesc: 'QA Инженер',
@@ -10,4 +10,4 @@ const QAEngeneers = {
   children: [
   ]
 }
-export default QAEngeneers
+export default QAEngeneer
