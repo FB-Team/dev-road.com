@@ -1,4 +1,4 @@
-const oS = {
+const OS = {
     meta: {
     hasChildren: false,
     path: '/system-prog/os'
@@ -47,7 +47,7 @@ const SystemProgRedux = {
     proftitle: 'Системное программирование',
     resume: {}
   },
-  children: [oS, additionalSoftware, firmware]
+  children: [OS, additionalSoftware, firmware]
 }
 
 export default SystemProgRedux
