@@ -1,3 +1,8 @@
+
+import ApplicationProgRedux from './ApplicationProgRedux';
+import SystemProgRedux from './SystemProgRedux';
+import WebProgRedux from './WebProgRedux';
+
 const root = {
     meta: {
       hasChildren: true,
@@ -7,37 +12,5 @@ const root = {
     data:{
 
     },
-    children: [
-      {
-        path: '/',
-        profdesc: '',
-        proftitle: '',
-        component: {}
-    ]
-}
-const frontEnd = {
-  meta: {
-    hasChildren: false,
-    isRoot: false,
-    path: '/'
-  },
-  data:{
-    profdesc: '',
-    proftitle: '',
-    resume: {}
-  },
-  children: []
-}
-const backEnd = {
-  meta: {
-    hasChildren: false,
-    isRoot: false,
-    path: '/'
-  },
-  data:{
-    profdesc: '',
-    proftitle: '',
-    resume: {}
-  },
-  children: []
+    children: [ ApplicationProgRedux, SystemProgRedux, WebProgRedux ]
 }
