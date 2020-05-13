@@ -1,12 +1,16 @@
-import React from 'react'
-import s from './Main.module.css'
 import { BrowserRouter as Router, Route} from 'react-router-dom'
-import SystemProg from './SystemProg/SystemProg.js'
+import React from 'react'
 import ApplicationProg from './ApplicationProg/ApplicationProg.js'
+import Footer from '../../Footer/Footer';
 import StartProg from './StartProg/StartProg.js'
+import SystemProg from './SystemProg/SystemProg.js'
 import WebProg from './WebProg/WebProg.js'
+import s from './Main.module.css'
 class Main extends React.Component {
   render () {
+
+    const a = 0
+
     return (
       <Router>
       <div  className={s.Main}>

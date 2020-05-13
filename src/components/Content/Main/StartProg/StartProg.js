@@ -3,6 +3,7 @@ import NavTile from '../NavTile/NavTile.js'
 
 class StartProg extends React.Component {
   render () {
+
     return (
       <div id="Main" className="horizontal-flex">
         <NavTile to={'/system-prog'} proftitle='Системное программироваиние' profdesc='Связующее звено между аппаратурой и прикладным програмным обеспечением.' profimg='path'/>
