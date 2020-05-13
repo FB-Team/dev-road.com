@@ -13,4 +13,5 @@ a:hover{
 */
 .horizontal-flex{
   display: flex;
+  justify-content: space-around;
 }

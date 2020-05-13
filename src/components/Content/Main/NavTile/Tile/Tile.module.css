@@ -1,5 +1,14 @@
+.Tile{
+  border:3px solid #F4A8E8;
+  border-radius: 20px;
+  padding: 10px;
+  height: 300px;
+}
 .proftitle {
   text-align: center;
+  font-size: 1.2rem;
+  font-weight: 500;
+  height: 70px;
 }
 
 .profimg {

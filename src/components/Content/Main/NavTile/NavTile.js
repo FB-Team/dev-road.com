@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom'
 class NavTile extends React.Component {
   render () {
     return (
-      <Link to={this.props.to}>
+      <Link className={s.link} to={this.props.to}>
         <Tile profdesc={this.props.profdesc} profimg={this.props.profimg} proftitle={this.props.proftitle} />
       </Link>
     )
