@@ -1,4 +1,3 @@
-import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom'
 import React from 'react'
 import NavTile from '../NavTile/NavTile.js'
 

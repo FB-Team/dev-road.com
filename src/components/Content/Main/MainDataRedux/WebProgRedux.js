@@ -1,12 +1,13 @@
 const backEnd = {
     meta: {
     hasChildren: false,
-    path: '/web-prog/back'
+    path: '/web-prog/back',
+    id: 'backEnd',
   },
   data:{
     profdesc: 'Довольно востребованное направление, отличается высокой универсальностю, хотя порог вхождения может быть выше, чем у front-end разработчика',
     proftitle: 'Back-end',
-    resume: {}
+
   },
   children: []
 }
@@ -14,12 +15,13 @@ const backEnd = {
 const frontEnd = {
     meta: {
     hasChildren: false,
-    path: '/web-prog/front'
+    path: '/web-prog/front',
+    id: 'frontEnd',
   },
   data:{
     profdesc: 'Отличный порог входа, множество курсов и учебных материалов, большое количество вакантных мест',
     proftitle: 'Front-end',
-    resume: {}
+
   },
   children: []
 }
@@ -28,12 +30,13 @@ const frontEnd = {
 const WebProgRedux = {
   meta:{
     hasChildren: true,
-    path: '/web-prog'
+    path: '/web-prog',
+    id: 'WebProgRedux',
   },
   data:{
     profdesc: 'Написание сайтов и веб приложений.',
     proftitle: 'Сетевое (Веб) программирование',
-    resume: {}
+
   },
   children: [frontEnd, backEnd]
 }

@@ -1,12 +1,13 @@
 const OS = {
     meta: {
     hasChildren: false,
-    path: '/system-prog/os'
+    path: '/system-prog/os',
+    id: 'OS',
   },
   data:{
     profdesc: 'разработка Windows, Linux ядра и тд',
     proftitle: 'Операционная система',
-    resume: {}
+
   },
   children: []
 }
@@ -14,12 +15,13 @@ const OS = {
 const additionalSoftware = {
     meta: {
     hasChildren: false,
-    path: '/system-prog/additional-software'
+    path: '/system-prog/additional-software',
+    id: 'additionalSoftware',
   },
   data:{
     profdesc: 'надстройки ПО',
     proftitle: 'Дополнительное системное ПО',
-    resume: {}
+
   },
   children: []
 }
@@ -27,12 +29,13 @@ const additionalSoftware = {
 const firmware = {
     meta: {
     hasChildren: false,
-    path: '/system-prog/firmware'
+    path: '/system-prog/firmware',
+    id: 'firmware',
   },
   data:{
     profdesc: 'Разработка драйверов и тд',
     proftitle: 'Встроенное программное обеспесчение',
-    resume: {}
+
   },
   children: []
 }
@@ -40,12 +43,13 @@ const firmware = {
 const SystemProgRedux = {
   meta:{
     hasChildren: true,
-    path: '/system-prog'
+    path: '/system-prog',
+    id: 'SystemProgRedux',
   },
   data:{
     profdesc: 'Связующее звено между аппаратурой и прикладным програмным обеспечением.',
     proftitle: 'Системное программирование',
-    resume: {}
+
   },
   children: [OS, additionalSoftware, firmware]
 }
