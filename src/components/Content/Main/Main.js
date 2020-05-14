@@ -21,11 +21,9 @@ class Main extends React.Component {
 function mapStateToProps(state){
   return{
     toRender: {
-      meta: {
-        path:   state.toRender.meta.path,
-        id: state.toRender.meta.id
-      },
-      children: state.children
+      meta: state.toRender.meta,
+      data: state.toRender.data,
+      children: state.toRender.children
     }
   }
 }

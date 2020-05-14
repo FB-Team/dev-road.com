@@ -10,7 +10,7 @@ function RendererContainer(props) {
     : RenderExpanded
 
   return (<div className={props.toRender.meta.id}>
-    <Route path='/:fullpath' render={() => <ResultingComponent component={props.toRender}/>}/>
+    <Route render={match => <ResultingComponent pathname={match.location.pathname} component={props.toRender}/>}/>
   </div>)
 }
 export default RendererContainer
