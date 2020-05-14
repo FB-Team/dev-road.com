@@ -1,7 +1,8 @@
 const VHFArtist = {
   meta: {
-    hasChildren: true,
-    path:        '/application-prog/desktop/vhfartist'
+    hasChildren: false,
+    path:        '/application-prog/desktop/vhfartist',
+    id: 'VHFArtist'
   },
   data:{
     profdesc: 'Разработчик графических эффектов',

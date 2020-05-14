@@ -1,7 +1,8 @@
 const TechnicalArtist = {
   meta: {
-    hasChildren: true,
-    path:        '/application-prog/desktop/technicalartist'
+    hasChildren: false,
+    path:        '/application-prog/desktop/technicalartist',
+    id: 'TechnicalArtist'
   },
   data:{
     profdesc: 'Технический артист',

@@ -1,7 +1,8 @@
 const CPlusQt = {
   meta: {
-    hasChildren: true,
-    path:        '/application-prog/desktop/cplusqt'
+    hasChildren: false,
+    path:        '/application-prog/desktop/cplusqt',
+    id:'CPlusQt'
   },
   data:{
     profdesc: 'Десктопная разработка с использованием С++ и библиотеки Qt',

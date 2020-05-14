@@ -1,7 +1,8 @@
 const GraphicsDeveloper = {
   meta: {
-    hasChildren: true,
-    path:        '/application-prog/desktop/graphicsdeveloper'
+    hasChildren: false,
+    path:        '/application-prog/desktop/graphicsdeveloper',
+    id: 'GraphicsDeveloper'
   },
   data:{
     profdesc: 'Графический разработчик',

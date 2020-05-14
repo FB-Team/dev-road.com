@@ -1,7 +1,8 @@
 const Android = {
   meta: {
-    hasChildren: true,
-    path:        '/application-prog/desktop/android'
+    hasChildren: false,
+    path:        '/application-prog/desktop/android',
+    id:          'Android'
   },
   data:{
     profdesc: 'Android разработчик',

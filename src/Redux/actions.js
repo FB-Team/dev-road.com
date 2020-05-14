@@ -8,18 +8,14 @@ export const PAGELOAD = 'PAGELOAD'
 export const TRANSITION = 'TRANSITION'
 export const JUMP = 'JUMP'
 
-export const loadPage = () =>  return {type: PAGELOAD}
+export const loadPage = () =>  ({type: PAGELOAD})
 
-export const transfer = id =>{
-  return {
+export const transfer = id =>({
     type: TRANSITION,
     id:   id
-  }
-}
+})
 
-export const jump = id =>{
-  return {
+export const jump = id =>({
     type: JUMP,
     id:   id
-  }
-}
+})

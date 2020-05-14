@@ -8,7 +8,8 @@ import VHFArtist from './VHFArtist/VHFArtist';
 const Games = {
   meta: {
     hasChildren: true,
-    path:        '/application-prog/games'
+    path:        '/application-prog/games',
+    id: 'Games'
   },
   data:{
 

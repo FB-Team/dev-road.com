@@ -1,7 +1,8 @@
 const Gamedesigner = {
   meta: {
-    hasChildren: true,
-    path:        '/application-prog/desktop/gamedesigner'
+    hasChildren: false,
+    path:        '/application-prog/desktop/gamedesigner',
+    id:'Gamedesigner'
   },
   data:{
     profdesc: 'Геймдизайнинг',

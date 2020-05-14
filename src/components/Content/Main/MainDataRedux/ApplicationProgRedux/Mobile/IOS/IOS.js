@@ -1,7 +1,8 @@
 const IOS = {
   meta: {
-    hasChildren: true,
-    path:        '/application-prog/desktop/ios'
+    hasChildren: false,
+    path:        '/application-prog/desktop/ios',
+    id: 'IOS'
   },
   data:{
     profdesc: 'IOS разработчик',

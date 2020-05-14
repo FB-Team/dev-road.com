@@ -35,7 +35,7 @@ const WebProgRedux = {
     proftitle: 'Сетевое (Веб) программирование',
     resume: {}
   },
-  children: [oS, additionalSoftware, firmware]
+  children: [frontEnd, backEnd]
 }
 
 export default WebProgRedux

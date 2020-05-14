@@ -1,7 +1,8 @@
 const QAEngeneer = {
   meta: {
-    hasChildren: true,
-    path:        '/application-prog/desktop/qaengeneer'
+    hasChildren: false,
+    path:        '/application-prog/desktop/qaengeneer',
+    id: 'QAEngeneer'
   },
   data:{
     profdesc: 'QA Инженер',

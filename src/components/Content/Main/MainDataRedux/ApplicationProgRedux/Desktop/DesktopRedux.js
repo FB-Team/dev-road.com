@@ -6,7 +6,8 @@ import JsElectron from './JsElectron/JsElectron';
 const Desktop = {
   meta: {
     hasChildren: true,
-    path:        '/application-prog/desktop'
+    path:        '/application-prog/desktop',
+    id: 'Desktop'
   },
   data:{
 

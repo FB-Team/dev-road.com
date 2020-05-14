@@ -6,11 +6,14 @@ import StartProg from './StartProg/StartProg.js'
 import SystemProg from './SystemProg/SystemProg.js'
 import WebProg from './WebProg/WebProg.js'
 import s from './Main.module.css'
+import {connect} from 'react-redux'
+import {loadPage,transfer,jump} from '../../../Redux/actions.js'
+
 class Main extends React.Component {
+  constructor(props){
+    super(props)
+  }
   render () {
-
-    const a = 0
-
     return (
       <Router>
       <div  className={s.Main}>
@@ -24,4 +27,14 @@ class Main extends React.Component {
     )
   }
 }
-export default Main
+function mapStateToProps(state){
+  return{
+    meta: {
+      path:   state.toRender.meta.path,
+      id: state.toRender.meta.id
+    },
+    children: state.children
+  }
+}
+export default connect(mapStateToProps, {loadPage, transfer, jump})(Main)
+//export default Main

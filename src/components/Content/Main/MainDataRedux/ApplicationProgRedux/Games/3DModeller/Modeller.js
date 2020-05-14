@@ -1,7 +1,8 @@
 const Modeller = {
   meta: {
-    hasChildren: true,
-    path:        '/application-prog/desktop/3dmodellers'
+    hasChildren: false,
+    path:        '/application-prog/desktop/3dmodellers',
+    id: 'Modeller'
   },
   data:{
     profdesc: '3D моделлирование с использованием различных скриптов и яп',

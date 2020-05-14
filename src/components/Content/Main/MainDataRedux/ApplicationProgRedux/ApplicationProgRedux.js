@@ -5,7 +5,8 @@ import MobileRedux from './Mobile/MobileRedux';
 const ApplicationProgRedux = {
     meta: {
       hasChildren: true,
-      path:        '/application-prog'
+      path:        '/application-prog',
+      id: 'ApplicationProgRedux'
     },
     data:{
 
@@ -16,3 +17,4 @@ const ApplicationProgRedux = {
       MobileRedux
     ]
 }
+export default ApplicationProgRedux

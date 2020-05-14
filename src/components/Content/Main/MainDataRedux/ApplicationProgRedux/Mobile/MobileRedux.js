@@ -4,7 +4,8 @@ import IOS from './IOS/IOS';
 const Mobile = {
   meta: {
     hasChildren: true,
-    path:        '/application-prog/mobile'
+    path:        '/application-prog/mobile',
+    id: 'Mobile'
   },
   data:{
 
