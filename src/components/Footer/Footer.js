@@ -11,9 +11,9 @@ class Footer extends React.Component{
             Вас так же может заинтересовать:
           </div>
           <div className={s["rel-sites-list"]}>
-            <a href="https://www.freecodecamp.org/">FreeCodeCamp</a>
-            <a href="https://www.codewars.com/">Codewars</a>
-            <a href="https://www.coursera.org/browse/computer-science">Coursera</a>
+            <a target="_blank" rel="noopener noreferrer" href="https://www.freecodecamp.org/">FreeCodeCamp</a>
+            <a target="_blank" rel="noopener noreferrer" href="https://www.codewars.com/">Codewars</a>
+            <a target="_blank" rel="noopener noreferrer" href="https://www.coursera.org/browse/computer-science">Coursera</a>
           </div>
         </div>
       </footer>
