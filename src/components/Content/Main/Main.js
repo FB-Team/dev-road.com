@@ -13,7 +13,7 @@ class Main extends React.Component {
   render () {
     return (
       <Router>
-    <RendererContainer toRender={this.props.toRender}/>
+    <RendererContainer transfer={this.props.transfer} toRender={this.props.toRender}/>
       </Router>
     )
   }

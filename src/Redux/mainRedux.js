@@ -1,14 +1,14 @@
 import { createStore } from 'redux'
 import { findComponent } from './findComponent';
-import root from '../components/Content/Main/MainDataRedux/MainDataRedux.js'
+import Root from '../components/Content/Main/MainDataRedux/MainDataRedux.js'
 import * as actions from './actions.js'
 /* КИРИЛЛ
 toRender - АКТУАЛЬНАЯ КОМПОНЕНТА, ЧЬИ ПОТОМКИ ДОЛНЫ БЫТЬ ОТРЕНДЕРЕНЫ НА ЭКРАНЕ
-root - ГЛАВНАЯ КОМПОНЕНТА, ЧТО БЫ БЫЛА ВОЗМОЖНОСТЬ ДОСТУПА КО ВСЕМ ДАННЫМ 'ЦЕЛИКОМ', А НЕ ТОЛЬКО К АКТУАЛЬНОЙ КОМПОНЕНТЕ
+Root - ГЛАВНАЯ КОМПОНЕНТА, ЧТО БЫ БЫЛА ВОЗМОЖНОСТЬ ДОСТУПА КО ВСЕМ ДАННЫМ 'ЦЕЛИКОМ', А НЕ ТОЛЬКО К АКТУАЛЬНОЙ КОМПОНЕНТЕ
 */
 let initialState = {}
-initialState.toRender = root
-initialState.root =     root
+initialState.toRender = Root
+initialState.Root =     Root
 const store = createStore(rootReducer)
 /* КИРИЛЛ
 ПРИ ЗАГРУЗКЕ СТРАНИЦИУ ВОЗВРАЩАЕМ КОРЕННУЮ КОМПОНЕНТУ
@@ -22,14 +22,17 @@ function rootReducer (state = initialState, action) {
       return state
 
     case actions.JUMP:
-        const result = findComponent (newState.root, action.id)
+        const result = findComponent (newState.Root, action.id)
         if (!result) throw new Error('findComponent(...): NO SUCH COMPONENT FOUND!')
         newState.toRender  = result
     return newState
 
     case actions.TRANSITION:
-        if (state.toRender.children)  newState.toRender = state.toRender.children[action.id]
-        return newState
+        debugger
+        console.log('transfer entered')
+        if (state.toRender.children)  newState.toRender = state.toRender.children.find (elem => elem.meta.id === action.id)
+        {debugger
+        return newState}
 
     default: return state
   }
