@@ -1,7 +1,10 @@
 import React from 'react'
-import RenderTiles from './RendererTiles'
-import RenderExpanded from './RendererExpanded'
+
 import {Route} from 'react-router'
+
+import ExpandedRenderer from './ExpandedRenderer/ExpandedRenderer';
+import RenderTiles from './RenderTiles/RenderTiles'
+
 
 function RendererContainer(props) {
   return (
@@ -9,9 +12,7 @@ function RendererContainer(props) {
         <Route render={match => {
             let ResultingComponent = props.toRender.meta.hasChildren
               ? RenderTiles
-              : RenderExpanded;
-
-              debugger
+              : ExpandedRenderer;
           return <ResultingComponent transfer={props.transfer} component={props.toRender}/>
         }
       }/>

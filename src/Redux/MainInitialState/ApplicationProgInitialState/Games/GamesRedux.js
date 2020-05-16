@@ -12,7 +12,8 @@ const Games = {
     id: 'Games'
   },
   data:{
-
+    proftitle: "Игры",
+    profdesc: "Популярное и высокооплачеваемое направлением в IT индустрии"
   },
   children: [
       Modeller,

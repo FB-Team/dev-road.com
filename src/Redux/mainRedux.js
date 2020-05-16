@@ -1,6 +1,6 @@
 import { createStore } from 'redux'
 import { findComponent } from './findComponent';
-import Root from '../components/Content/Main/MainDataRedux/MainDataRedux.js'
+import Root from './MainInitialState/MainInitialState'
 import * as actions from './actions.js'
 /* КИРИЛЛ
 toRender - АКТУАЛЬНАЯ КОМПОНЕНТА, ЧЬИ ПОТОМКИ ДОЛНЫ БЫТЬ ОТРЕНДЕРЕНЫ НА ЭКРАНЕ
@@ -8,33 +8,40 @@ Root - ГЛАВНАЯ КОМПОНЕНТА, ЧТО БЫ БЫЛА ВОЗМОЖН�
 */
 let initialState = {}
 initialState.toRender = Root
-initialState.Root =     Root
+initialState.Root = Root
 const store = createStore(rootReducer)
 /* КИРИЛЛ
 ПРИ ЗАГРУЗКЕ СТРАНИЦИУ ВОЗВРАЩАЕМ КОРЕННУЮ КОМПОНЕНТУ
 ПРИ ПРОСТОМ ПЕРЕХОДЕ РЕНДЕРИМ ОДИН ИЗ ДОЧЕРНИХ КОМПОНЕНТОВ
 ПРИ ПРЫЖКЕ ИЩЕМ КОМПОНЕНТУ В ДЕРЕВЕ И ВОЗВРАЩАЕМ ЕЕ ДЛЯ РЕНДЕРИНГА
 */
-function rootReducer (state = initialState, action) {
-   let newState = Object.assign(state, {})
+/* Михаил
+  state не должен изменяться внутри функции rootReducer
+*/
+function rootReducer(state = initialState, action) {
+  let newToRender
   switch (action.type) {
     case actions.PAGELOAD:
       return state
 
     case actions.JUMP:
-        const result = findComponent (newState.Root, action.id)
-        if (!result) throw new Error('findComponent(...): NO SUCH COMPONENT FOUND!')
-        newState.toRender  = result
-    return newState
+      newToRender = findComponent(state.Root, action.id)
+      if (!newToRender) throw new Error('findComponent(...): NO SUCH COMPONENT FOUND!')
+      return {
+        ...state,
+        toRender: newToRender
+      }
 
-    case actions.TRANSITION:
-        debugger
-        console.log('transfer entered')
-        if (state.toRender.children)  newState.toRender = state.toRender.children.find (elem => elem.meta.id === action.id)
-        {debugger
-        return newState}
+      case actions.TRANSITION:
+        newToRender = state.toRender.children.find(child => child.meta.id === action.id)
+        if (!newToRender) throw new Error('actions.TRANSITION: NO SUCH CHILD FOUND!')
+        return {
+          ...state,
+          toRender: newToRender
+        }
 
-    default: return state
+        default:
+          return state
   }
 }
 export default store

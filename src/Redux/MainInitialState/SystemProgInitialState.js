@@ -40,7 +40,7 @@ const firmware = {
   children: []
 }
 
-const SystemProgRedux = {
+const SystemProgInitialState = {
   meta:{
     hasChildren: true,
     path: '/system-prog',
@@ -54,4 +54,4 @@ const SystemProgRedux = {
   children: [OS, additionalSoftware, firmware]
 }
 
-export default SystemProgRedux
+export default SystemProgInitialState

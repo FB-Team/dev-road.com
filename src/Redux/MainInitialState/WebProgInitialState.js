@@ -27,7 +27,7 @@ const frontEnd = {
 }
 
 
-const WebProgRedux = {
+const WebProgInitialState = {
   meta:{
     hasChildren: true,
     path: '/web-prog',
@@ -41,4 +41,4 @@ const WebProgRedux = {
   children: [frontEnd, backEnd]
 }
 
-export default WebProgRedux
+export default WebProgInitialState

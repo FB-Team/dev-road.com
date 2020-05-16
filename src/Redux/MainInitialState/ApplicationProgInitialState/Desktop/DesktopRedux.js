@@ -10,7 +10,8 @@ const Desktop = {
     id: 'Desktop'
   },
   data:{
-
+    proftitle:"Десктопная разработка", 
+    profdesc:"Довольно востребованное направление, имеет отличный порог входа"
   },
   children: [
 CNET,
