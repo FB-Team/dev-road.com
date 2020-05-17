@@ -6,7 +6,7 @@ import ExpandedRenderer from './ExpandedRenderer/ExpandedRenderer';
 import RenderTiles from './RenderTiles/RenderTiles'
 
 
-function RendererContainer(props) {
+const RendererContainer = (props) => {
   return (
     <div className={props.toRender.meta.id}>
         <Route render={match => {

@@ -4,7 +4,7 @@ import s from './Sidebar.module.css'
 class Sidebar extends React.Component{
   render(){
     return (
-      <div id="Sidebar">
+      <div id={s.Sidebar}>
         <Sidetile description="Главная"/>
         <Sidetile description="Веб разработка"/>
         <Sidetile description="Десктопная разработка"/>

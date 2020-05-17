@@ -1,5 +1,5 @@
 import React from 'react'
-function RenderExpanded(props){
+ const RenderExpanded = (props) => {
   return (
 <div id='rendererExpanded'>Expanded</div>
   )
