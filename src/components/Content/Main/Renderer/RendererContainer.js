@@ -13,7 +13,8 @@ const RendererContainer = (props) => {
             let ResultingComponent = props.toRender.meta.hasChildren
               ? RenderTiles
               : ExpandedRenderer;
-          return <ResultingComponent transfer={props.transfer} component={props.toRender}/>
+          return <ResultingComponent transfer={props.transfer}
+                                     component={props.toRender}/>
         }
       }/>
   </div>
