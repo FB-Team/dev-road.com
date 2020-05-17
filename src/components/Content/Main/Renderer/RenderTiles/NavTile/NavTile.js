@@ -6,7 +6,8 @@ class NavTile extends React.Component {
   render () {
     return (
       <Link className={s.link} to={this.props.to}>
-        <Tile profdesc={this.props.profdesc} profimg={this.props.profimg} proftitle={this.props.proftitle} />
+        <Tile profdesc={this.props.profdesc}
+              profimg={this.props.profimg} proftitle={this.props.proftitle} />
       </Link>
     )
   }
