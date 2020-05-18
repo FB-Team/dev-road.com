@@ -39,7 +39,6 @@ function rootReducer(state = initialState, action) {
           ...state,
           toRender: newToRender
         }
-
         default:
           return state
   }
