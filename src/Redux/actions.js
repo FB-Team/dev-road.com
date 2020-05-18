@@ -10,12 +10,12 @@ export const JUMP = 'JUMP'
 
 export const loadPage = () =>  ({type: PAGELOAD})
 
-export const transfer = id =>({
+export const transfer = path =>({
     type: TRANSITION,
-    id:   id
+    id:   path
 })
 
-export const jump = id =>({
+export const jump = path =>({
     type: JUMP,
-    id:   id
+    id:   path
 })

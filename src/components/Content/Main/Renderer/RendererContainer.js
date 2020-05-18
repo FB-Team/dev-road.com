@@ -13,6 +13,8 @@ const RendererContainer = (props) => {
             let ResultingComponent = props.toRender.meta.hasChildren
               ? RenderTiles
               : ExpandedRenderer;
+            //this.props.jump(match.location.path)
+            <BreadCrumbs crumps={findAllParents(this.props.toRender)}>
           return <ResultingComponent transfer={props.transfer}
                                      component={props.toRender}/>
         }
