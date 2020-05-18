@@ -6,5 +6,5 @@ while (child.parent){
   parents.push({path: child.meta.path, title: child.data.proftitle})
 }
 return parents
-}else return {}
+}else return []
 }
