@@ -1,0 +1,10 @@
+{
+  "js": {
+    "brace_style": "end-expand",
+    "indent_with_tabs": true
+  },
+  "jsx": {
+    "brace_style": "end-expand",
+    "indent_with_tabs": true
+  }
+}
