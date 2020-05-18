@@ -5,13 +5,13 @@
 3)  БЫСТРЫЙ ПЕРЕХОД ПО 'ХЛЕБНЫМ КРОШКАМ' - ДЕЙСТВИЕ JUMP
 */
 export const PAGELOAD = 'PAGELOAD'
-export const TRANSITION = 'TRANSITION'
+export const TRANSFER = 'TRANSFER'
 export const JUMP = 'JUMP'
 
 export const loadPage = () =>  ({type: PAGELOAD})
 
 export const transfer = path =>({
-    type: TRANSITION,
+    type: TRANSFER,
     id:   path
 })
 

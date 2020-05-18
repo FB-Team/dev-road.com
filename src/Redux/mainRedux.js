@@ -25,16 +25,16 @@ function rootReducer(state = initialState, action) {
       return state
 
     case actions.JUMP:
-      newToRender = findComponent(state.Root, action.id)
+      newToRender = findComponent(state.Root, action.path)
       if (!newToRender) throw new Error('findComponent(...): NO SUCH COMPONENT FOUND!')
       return {
         ...state,
         toRender: newToRender
       }
 
-      case actions.TRANSITION:
+      case actions.TRANSFER:
         newToRender = state.toRender.children.find(child => child.meta.id === action.id)
-        if (!newToRender) throw new Error('actions.TRANSITION: NO SUCH CHILD FOUND!')
+        if (!newToRender) throw new Error('actions.TRANSFER: NO SUCH CHILD FOUND!')
         return {
           ...state,
           toRender: newToRender
@@ -43,4 +43,5 @@ function rootReducer(state = initialState, action) {
           return state
   }
 }
+window.store = store
 export default store
