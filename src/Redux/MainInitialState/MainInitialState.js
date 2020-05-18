@@ -8,9 +8,9 @@ const Root = {
       hasChildren: true,
       isRoot:      true,
       path:        '/',
-      id: 'root'
+      id:          'root'
     },
     data:{},
-    children: [ ApplicationProgInitialState, SystemProgInitialState, WebProgInitialState ]
+    children: [ApplicationProgInitialState, SystemProgInitialState, WebProgInitialState]
 }
 export default Root

@@ -1,10 +1,9 @@
 import React from 'react'
-
 import {Route} from 'react-router'
-
+import { findAllParents } from './findAllParents';
 import ExpandedRenderer from './ExpandedRenderer/ExpandedRenderer';
 import RenderTiles from './RenderTiles/RenderTiles'
-
+import BreadCrumbs from './BreadCrumbs/BreadCrumbs.js'
 
 const RendererContainer = (props) => {
   return (
@@ -14,9 +13,9 @@ const RendererContainer = (props) => {
               ? RenderTiles
               : ExpandedRenderer;
             //this.props.jump(match.location.path)
-            <BreadCrumbs crumps={findAllParents(this.props.toRender)}>
-          return <ResultingComponent transfer={props.transfer}
-                                     component={props.toRender}/>
+
+          return <div id="RendererContainer"><BreadCrumbs crumbs={findAllParents(props.toRender)}/> <ResultingComponent transfer={props.transfer}
+                                     component={props.toRender}/></div>
         }
       }/>
   </div>
