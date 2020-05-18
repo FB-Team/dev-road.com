@@ -9,7 +9,9 @@ const Root = {
 		path: '/',
 		id: 'root'
 	},
-	data: {},
+	data: {
+		proftitle: 'Главная'
+	},
 	children: [ApplicationProgInitialState, SystemProgInitialState, WebProgInitialState]
 }
 

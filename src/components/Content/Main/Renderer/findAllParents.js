@@ -1,9 +1,10 @@
 export function findAllParents(child){
-if (child.parent){
+  let current = child
+if (current.parent){
 let parents = []
-while (child.parent){
-  child = child.parent
-  parents.push({path: child.meta.path, title: child.data.proftitle})
+while (current.parent){
+  current = current.parent
+  parents.push({path: current.meta.path, title: current.data.proftitle})
 }
 return parents
 }else return []

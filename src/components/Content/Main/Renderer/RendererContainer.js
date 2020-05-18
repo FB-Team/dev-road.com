@@ -10,16 +10,15 @@ import RenderTiles from './RenderTiles/RenderTiles'
 
 
 const RendererContainer = (props) => {
-  debugger;
   return (
     <div className={props.toRender.meta.id}>
         <Route render={match => {
             let ResultingComponent = props.toRender.meta.hasChildren
               ? RenderTiles
               : ExpandedRenderer;
-            //this.props.jump(match.location.path)
+            props.jump(match.location.pathname)
           return (<div>
-            <BreadCrumbs crumbs={findAllParents(props.toRender)} />
+            <BreadCrumbs crumbs={findAllParents(props.toRender)} jump={props.jump} />
             <ResultingComponent transfer={props.transfer}
                                        component={props.toRender}/>
           </div>)

@@ -1,18 +1,25 @@
-import React from 'react';
 import {Link} from 'react-router-dom'
+import { connect } from 'react-redux';
+import React from 'react';
+
+import { jump } from '../../../../../Redux/actions';
 import s from './BreadCrumbs.module.css';
 
+
 const BreadCrumbs = (props) => {
-  debugger;
 	if (props.crumbs) {
-		function onClick(e) {
-			props.jump(e.currentTarget.meta.path)
+		function onClick(event) {
+      console.log('e.currentTarget - ' + event.currentTarget.pathname)
+			props.jump(event.currentTarget.pathname)
 		}
-		const crumbs = props.crumbs.map(crumb => (<Link className={s.link} to={crumb.path} onClick={onClick}>
+		const crumbs = props.crumbs.map(crumb => {
+      console.log('crumb (path, title) = '  + crumb.path + ', ' + crumb.title)
+      return (<div key={crumb.path}><Link className={s.link} to={crumb.path} onClick={onClick}>
 			{crumb.title}
-		</Link>))
+		</Link></div>)}
+  )
 		return (<div className='BreadCrumbs'>
-			{crumbs}
+			{crumbs.reverse()}
 		</div>)
 	}
   else {
