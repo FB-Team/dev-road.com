@@ -7,8 +7,27 @@ const CNET = {
   data:{
     profdesc: 'Десктопная разработка с использованием С шарпа и библиотеки .NET',
     proftitle: 'C#',
+
   },
   children: [
   ]
 }
 export default CNET
+
+CNET.data.expanded = {
+  desc: '',
+  tools: {
+  name: '',
+  links: [{name: '', target: ''}],
+  children: [
+    {}
+  ]
+},
+  prosAndCons:{
+    pros: [],
+    cons: []
+  },
+  profAlikeId:[],
+  conclusion: '',
+  popularQuest: [{name: '', target: ''}]
+}

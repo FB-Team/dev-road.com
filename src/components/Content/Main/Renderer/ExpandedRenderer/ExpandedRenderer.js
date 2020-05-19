@@ -1,7 +1,13 @@
 import React from 'react'
  const RenderExpanded = (props) => {
   return (
-<div id='rendererExpanded'>Expanded</div>
+<div id='rendererExpanded'>
+    <Introduction />
+    <Tools/>
+    <ProsAndCons/>
+    <ProfsAlike/>
+    <Resume/>
+</div>
   )
 }
 
