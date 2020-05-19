@@ -12,8 +12,6 @@ const CNET = {
   children: [
   ]
 }
-export default CNET
-
 CNET.data.expanded = {
   desc: '',
   tools: {
@@ -31,3 +29,4 @@ CNET.data.expanded = {
   conclusion: '',
   popularQuest: [{name: '', target: ''}]
 }
+export default CNET
