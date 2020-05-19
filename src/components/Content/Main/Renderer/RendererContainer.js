@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useState} from 'react'
 
 import {Route} from 'react-router'
 
@@ -10,13 +10,18 @@ import RenderTiles from './RenderTiles/RenderTiles'
 
 
 const RendererContainer = (props) => {
+  const [isFirstLoad, setIsFirstLoad] = useState(true);
   return (
     <div className={props.toRender.meta.id}>
         <Route render={match => {
             let ResultingComponent = props.toRender.meta.hasChildren
               ? RenderTiles
               : ExpandedRenderer;
-            props.jump(match.location.pathname)
+            debugger
+            if (isFirstLoad) {
+              props.jump(match.location.pathname)
+              setIsFirstLoad(false)
+            }
           return (<div>
             <BreadCrumbs crumbs={findAllParents(props.toRender)} jump={props.jump} />
             <ResultingComponent transfer={props.transfer}
