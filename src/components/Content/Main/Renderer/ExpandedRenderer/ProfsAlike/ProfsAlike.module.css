@@ -1,0 +1,13 @@
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+.NavTile {
+  margin-right: 20px;
+}
+
+.NavTile a > div {
+  width: 150px;
+  height: 150px;
+}

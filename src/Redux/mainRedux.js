@@ -19,29 +19,32 @@ const store = createStore(rootReducer)
   state не должен изменяться внутри функции rootReducer
 */
 function rootReducer(state = initialState, action) {
-  let newToRender
-  switch (action.type) {
-    case actions.PAGELOAD:
-      return state
+	let newToRender
+	switch (action.type) {
+		case actions.LOAD_PAGE:
+			return state
 
-    case actions.JUMP:
-      newToRender = findComponent(state.Root, action.path)
-      if (!newToRender) throw new Error('findComponent(...): NO SUCH COMPONENT FOUND!')
-      return {
-        ...state,
-        toRender: newToRender
-      }
+		case actions.JUMP:
+			newToRender = findComponent(state.Root, action.path)
+			if (!newToRender)
+				throw new Error('findComponent(...): NO SUCH COMPONENT FOUND!')
+			return {
+				...state,
+				toRender: newToRender
+			}
 
-      case actions.TRANSFER:
-        newToRender = state.toRender.children.find(child => child.meta.id === action.id)
-        if (!newToRender) throw new Error('actions.TRANSFER: NO SUCH CHILD FOUND!')
-        return {
-          ...state,
-          toRender: newToRender
-        }
-        default:
-          return state
-  }
+		case actions.TRANSFER:
+			newToRender = state.toRender.children
+				.find(child => child.meta.id === action.id)
+			if (!newToRender) throw new Error('actions.TRANSFER: NO SUCH CHILD FOUND!')
+			return {
+				...state,
+				toRender: newToRender
+			}
+
+		default:
+			return state
+	}
 }
 window.store = store
 export default store
