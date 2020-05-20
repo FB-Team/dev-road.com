@@ -1,15 +1,13 @@
+import React from 'react';
+import s from './Tools.module.css';
+
 function createTools(root){
- let wrapper = document.createElement('ul')
-debugger
- wrapper.after(root.name)
+ let items = []
  root.children.forEach((child) => {
-   let li = document.createElement('li')
-   if (child.children){
-     li.after(child.name)
-     li.append(createTools(root.child))
-   }else li.innerHTML = child.name
-     wrapper.append(li)
+   if (child.children.length > 0){
+     items.push(<li className={s.list}>{child.name}{createTools(child)}</li>)
+   }else items.push(<li className={s.list}>{child.name}</li>)
  })
-return wrapper
+return <ul className={s.ulist}>{items}</ul>
 }
 export default createTools

@@ -4,7 +4,7 @@ export const ChildFirst =  {
     name: 'linkname',
     target: '#'
   }],
-  children: [{}]
+  children: []
 }
 export const ChildSecond =  {
   name: 'ChildSecond',
@@ -12,7 +12,7 @@ export const ChildSecond =  {
     name: 'linkname',
     target: '#'
   }],
-  children: [{}]
+  children: []
 }
 export const ChildThirst =  {
   name: 'ChildThirst',
@@ -20,5 +20,5 @@ export const ChildThirst =  {
     name: 'linkname',
     target: '#'
   }],
-  children: [{}]
+  children: [ChildFirst]
 }
