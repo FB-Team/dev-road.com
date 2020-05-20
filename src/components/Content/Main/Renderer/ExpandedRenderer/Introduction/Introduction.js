@@ -3,6 +3,7 @@ import React from 'react'
 import s from './Introduction.module.css';
 
  const Introduction = (props) => {
+
   return (
 <div id='Introduction'>
     <span className={s.title}>{props.title}</span>

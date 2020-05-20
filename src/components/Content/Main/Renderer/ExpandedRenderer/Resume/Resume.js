@@ -15,7 +15,7 @@ const Resume = (props) => {
 
 const PopularQuest = (props) => {
   const onQuestionClick = e => {
-    debugger
+    
     e.currentTarget.classList.toggle(s.active)
   }
   let questions = props.questions.map( q => {
