@@ -1,11 +1,11 @@
 import React from 'react'
-
+import createTools from './createTools'
 import s from './Tools.module.css';
 
  const Tools = (props) => {
   return (
 <div id='Tools'>
-<ToolsRender toRender={props.toRender.data.expanded.tools}/>
+{createTools(props.toRender)}
 </div>
   )
 }
