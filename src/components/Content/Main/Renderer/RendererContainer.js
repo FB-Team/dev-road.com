@@ -17,7 +17,7 @@ const RendererContainer = (props) => {
             let ResultingComponent = props.toRender.meta.hasChildren
               ? RenderTiles
               : ExpandedRenderer;
-            debugger
+            
             if (isFirstLoad) {
               props.jump(match.location.pathname)
               setIsFirstLoad(false)

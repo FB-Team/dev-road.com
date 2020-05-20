@@ -5,7 +5,7 @@ import s from './Tools.module.css';
  const Tools = (props) => {
   return (
 <div id='Tools'>
-{createTools(props.toRender)}
+{createTools(props.tools)}
 </div>
   )
 }
