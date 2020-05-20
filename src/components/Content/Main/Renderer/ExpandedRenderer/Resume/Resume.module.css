@@ -1,0 +1,53 @@
+.conclusion p {
+  text-align: justify;
+}
+
+.conclusion .title {
+  text-align: center;
+}
+
+.PopularQuest .title {
+  font-style: italic;
+}
+
+.questionWithAnswer {
+  display: flex;
+}
+
+.questionWithAnswer dt,
+.questionWithAnswer dd {
+  padding: 5px;
+}
+
+.questionWithAnswer dt {
+  position: relative;
+  width: 500px;
+  background-color: gray;
+  border: 0.1px solid lightgray;
+}
+
+.questionWithAnswer dt:after {
+  position: absolute;
+  right: 0;
+  content: '>'
+}
+
+.questionWithAnswer dt.active:after {
+  transform: rotate(90deg);
+}
+
+.questionWithAnswer dd{
+  display: none;
+  border-radius: 5px;
+}
+
+.questionWithAnswer dt.active + dd{
+  display: block;
+}
+
+.questionWithAnswer dd {
+  background-color: green;
+}
+
+.questionWithAnswerContainer {
+}
