@@ -1,14 +1,14 @@
 /* КИРИЛЛ
   ОСНОВНЫЕ ТИПЫ СОБЫТИЙ:
-1)  РЕНДЕРИНГ КОМПОНЕНТОВ ПРИ ЗАГРУЗКЕ СТРАНИЦИ - ДЕЙТСВИЕ LOAD_PAGE
-2)  НАВИГАЦИЯ ПОЛЬЗОВАТЕЛЯ ПО КАТЕГОРИЯМ - ДЕЙСТВИЕ TRANFER
+1)  РЕНДЕРИНГ КОМПОНЕНТОВ ПРИ ЗАГРУЗКЕ СТРАНИЦИ - ДЕЙТСВИЕ PAGELOAD
+2)  НАВИГАЦИЯ ПОЛЬЗОВАТЕЛЯ ПО КАТЕГОРИЯМ - ДЕЙСТВИЕ TRANSITION
 3)  БЫСТРЫЙ ПЕРЕХОД ПО 'ХЛЕБНЫМ КРОШКАМ' - ДЕЙСТВИЕ JUMP
 */
-export const LOAD_PAGE = 'LOAD_PAGE'
+export const PAGELOAD = 'PAGELOAD'
 export const TRANSFER = 'TRANSFER'
 export const JUMP = 'JUMP'
 
-export const loadPage = () =>  ({type: LOAD_PAGE})
+export const loadPage = () =>  ({type: PAGELOAD})
 
 export const transfer = id =>({
     type: TRANSFER,

@@ -1,8 +1,6 @@
-import { findComponent } from '../findComponent';
 import ApplicationProgInitialState from './ApplicationProgInitialState/ApplicationProgInitialState.js';
 import SystemProgInitialState from './SystemProgInitialState';
 import WebProgInitialState from './WebProgInitialState';
-
 //КИРИЛЛ ДОБАВИЛ БЕКСЛЭШ В СВОЙСТВО PATH, ДОБАВИЛ СВОЙСТВО ID В META
 const Root = {
 	meta: {
@@ -36,27 +34,5 @@ const addParents = root => {
 
 }
 
-const setProfsAlike = parent => {
-	if (parent.children.length === 0) {
-		if (parent.data.expanded) {
-			parent.data.expanded.profsAlike.ids.forEach( (id, index) => {
-			let tempComp = findComponent(Root, id, "id");
-				parent.data.expanded.profsAlike.result[index] = {
-					title: tempComp.data.proftitle,
-					imgPath: "",
-					urlPath: tempComp.meta.path
-				}
-			})
-		}
-	}
-	else {
-		parent.children.forEach(child => {
-			setProfsAlike(child)
-		});
-	}
-	return
-}
-
 addParents(Root);
-setProfsAlike(Root);
 export default Root

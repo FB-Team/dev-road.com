@@ -1,16 +1,15 @@
 // КИРИЛЛ РЕКУРСИВНАЯ ФУНКЦИЯ ПОИСКА НУЖНОЙ КОМПОНЕНТЫ
-// М: Возможен поиск по path, id
-export function findComponent (root, typeValue, type="path"){
+export function findComponent (root, path){
     let result = null
 
-    if (typeValue === root.meta[type]) {
+    if (path === root.meta.path) {
       result = root
       return result
     }
     if (root.children) {
       for (let i = 0; i < root.children.length; i++) {
-          if (root.children[i].meta[type] !== typeValue) {
-            result = findComponent(root.children[i], typeValue, type)
+          if (root.children[i].meta.path !== path) {
+            result = findComponent(root.children[i], path)
             if (result) return result
           }
           else {
