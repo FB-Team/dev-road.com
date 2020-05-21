@@ -9,10 +9,10 @@ const BreadCrumbs = (props) => {
 		}
 		const crumbs = props.crumbs.map(crumb => {
 			return (<Link className={s.link} to={crumb.path} onClick={onClick}>
-				{crumb.title}
+				{crumb.title}<div className={s.arrow}></div>
 			</Link>)
 		})
-		return (<div className='BreadCrumbs'>
+		return (<div className={s.BreadCrumbs}>
 			{crumbs.reverse()}
 		</div>)
 	} else {
