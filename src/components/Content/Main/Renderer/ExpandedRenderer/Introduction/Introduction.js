@@ -6,9 +6,9 @@ import s from './Introduction.module.css';
 
   return (
 <div id='Introduction'>
-    <span className={s.title}>{props.title}</span>
-    <img className={s.image} src={props.imgPath} alt="Server error, cannot load an image:-("/>
-    <span className={s.description}>{props.description}</span>
+    <div className={s.titleWrapper}><span className={s.title}>{props.title}</span></div>
+    <div className={s.imageWrapper}><img className={s.image} src={props.imgPath} alt="Server error, cannot load an image:-("/></div>
+    <div className={s.descriptionWrapper}><p className={s.description}>{props.description}</p></div>
 </div>
   )
 }
