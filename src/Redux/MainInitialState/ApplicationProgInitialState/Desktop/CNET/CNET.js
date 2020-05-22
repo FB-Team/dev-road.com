@@ -1,8 +1,4 @@
-import {
-  ChildFirst,
-  ChildSecond,
-  ChildThirst,
-} from '../../../testToolsChildren';
+import { WPF, UWP} from './Tools/Tools'
 
 const CNET = {
 	meta: {
@@ -18,35 +14,49 @@ const CNET = {
 	children: []
 }
 CNET.data.expanded = {
-	desc: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+	desc: `<p>Язык C# довольно хороший язык для тех, кто решил начать изучать программирование. Для разработки программ используется .Net Core или .Net Framework. Это фреймворки(среда для программирования), которые является посредником между вашими файлами с кодом и операционной системой. Для наших задач лучше использовать .Net Framework.(Core используется в веб приложениях, микросервисах и тд)</p>
+  <p>Задачей программиста является разработка Windows приложений с графическим интерфейсом. В процессе обучения вам нужно будет научиться работать с базой данных, понимать принципы ООП и другое.</p>`,
 	imgPath: '',
 	tools: {
-		name: 'CNET Main Category',
-		links: [{
-			name: 'CNET LINK',
-			target: '#'
-		}],
-		children: [ChildFirst, ChildSecond, ChildThirst]
+		name: 'С#',
+		links: [
+      {
+  			name: 'ITDVN',
+  			target: 'https://itvdn.com/ru/specialities/net-developer'
+  		},
+      {
+        name: 'Metanit',
+        target: 'https://metanit.com/sharp/'
+      },
+      {
+        name: 'C# 8.0 Карманный справочник',
+        target: 'http://radiosit.ru/news/c_8_0_karmannyj_spravochnik/2020-03-08-8746'
+      },{
+        name: 'Документация',
+        target: 'https://docs.microsoft.com/ru-ru/dotnet/csharp/'
+      }
+    ],
+		children: [WPF, UWP]
 	},
 	prosAndCons: {
-		pros: ["Круто", "Весело", "Приложений для друзей!"],
-		cons: ["Разработка только на виндоус", "Долгая разработка", "Сложно"]
+		pros: ["Средний порог вхождения. Подходит для новичков", "Частые обновления языка и платформы", "Наличие \"сахара\"", "Модульность .Net(Разные части программы можно писать на разных языках)", "ООП"],
+		cons: ["Разработка только на Windows(desktop)", "Производительность", "Довольно просто изъять исходники готовой программы"]
 	},
 	profsAlike: {
-		ids: ['frontEnd','Java'],
+		ids: ['Java', 'JsElectron', 'backEnd'],
 		result: [{
 			title: "",
 			imgPath: "",
 			urlPath: ""
 		}]
 	},
-	conclusion: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus aut inventore quasi atque expedita, natus eligendi ut ratione, enim cumque eos qui omnis libero nisi sunt! Ab voluptatum adipisci amet! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores nostrum iusto earum expedita, unde nemo optio dolorum quidem porro, sit tempore nihil reiciendis iste consequuntur repellat dignissimos placeat vero a!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur, soluta, aspernatur. Fugit quisquam quaerat cumque magni blanditiis alias modi velit vero sapiente, animi nulla itaque minus! Dolorem at ea, illum.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam beatae aut quas, tempore modi est adipisci, quidem illum cum ducimus vitae aliquam voluptatum debitis natus delectus doloremque sint veniam rem.',
+	conclusion: '',
 	popularQuest: [{
 		name: 'Какая средняя зарплата специалиста?',
-		target: '2000$'
+		target: '~700$ для начинающего, ~2000$ и больше для middle разработчика'
 	}, {
 		name: 'Насколько популярна профессия?',
-		target: 'Данная профессия находится в топе по данным FireFox Explorer'
+		target: 'C# находится на 5 строчке в рейтинге топ языков. В основном, в больших компаниях есть спрос на специалистов .Net, в маленьких же предпочитают альтернативы.'
 	}]
 }
 export default CNET
