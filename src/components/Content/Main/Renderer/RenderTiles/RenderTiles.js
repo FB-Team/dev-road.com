@@ -9,7 +9,7 @@ const RenderTiles = props => {
     props.transfer(event.currentTarget.id)
   }
 let NavTiles = props.component.children
-  .map(child => <div className={s.NavTile} id={child.meta.id}
+  .map(child => <div key={child.meta.id} className={s.NavTile} id={child.meta.id}
     onClick={onClickTile}><NavTile to={child.meta.path} onClick={onClickTile}
     proftitle={child.data.proftitle} profdesc={child.data.profdesc}/></div>
 )

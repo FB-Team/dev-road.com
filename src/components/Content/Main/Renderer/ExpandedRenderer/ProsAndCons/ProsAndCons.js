@@ -7,10 +7,10 @@ const ProsAndCons = (props) => {
       <div className={s.title}>Плюсы и минусы профессии</div>
       <div className={s.container}>
         <ul className={s.pros}>
-          {props.pros.map( p => <li>{p}</li> )}
+          {props.pros.map( (p, i) => <li key={i}>{p}</li> )}
         </ul>
         <ul className={s.cons}>
-          {props.cons.map( c => <li>{c}</li> )}
+          {props.cons.map( (c, i) => <li key={i}>{c}</li> )}
         </ul>
       </div>
     </div>

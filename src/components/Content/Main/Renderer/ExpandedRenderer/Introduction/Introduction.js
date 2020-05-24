@@ -13,7 +13,7 @@ import ReactHtmlParser from 'react-html-parser';
 <div id='Introduction'>
     <div className={s.title}>{props.title}</div>
     <div className={s.imageWrapper}><img className={s.image} src={props.imgPath} alt="Server error, cannot load an image:-("/></div>
-    <div className={s.descriptionWrapper}><p className={s.description}>{description}</p></div>
+    <div className={s.description}>{description}</div>
 </div>
   )
 }

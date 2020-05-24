@@ -1,7 +1,6 @@
 import CNET from './CNET/CNET';
 import CPlusQt from './CPlusQt/CPlusQt';
 import Java from './Java/Java';
-import JsElectron from './JsElectron/JsElectron';
 
 const Desktop = {
   meta: {
@@ -16,8 +15,7 @@ const Desktop = {
   children: [
 CNET,
 CPlusQt,
-Java,
-JsElectron
+Java
   ]
 }
 export default Desktop

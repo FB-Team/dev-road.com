@@ -3,16 +3,15 @@ import Header from './components/Header/Header.js'
 import Sidebar from './components/Sidebar/Sidebar.js'
 import Footer from './components/Footer/Footer.js'
 import './common.css'
+import './App.css'
 import Content from './components/Content/Content.js'
 class  App extends React.Component {
   render (){
     return (
     <div className="App">
       <Header />
-      <div className="horizontal-flex">
-        <Sidebar />
-        <Content />
-      </div>
+      <Sidebar />
+      <Content />
       <Footer />
     </div>
   )

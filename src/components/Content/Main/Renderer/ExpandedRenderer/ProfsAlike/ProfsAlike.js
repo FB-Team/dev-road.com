@@ -16,7 +16,7 @@ const ProfsAlike = (props) => {
           props.profsAlike.map( prof => {
             ;
             return  (
-              <div className={s.NavTile} id={prof.urlPath}onClick={onClickTile}>
+              <div key={prof.urlPath} className={s.NavTile} id={prof.urlPath} onClick={onClickTile}>
                 <Navtile to={prof.urlPath} profdesc="" proftitle={prof.title} />
               </div>)
           })
