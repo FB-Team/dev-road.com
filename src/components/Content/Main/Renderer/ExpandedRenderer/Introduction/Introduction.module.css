@@ -1,9 +1,12 @@
 .title{
-
+  margin-top: 10px;
+  text-align: center;
+  font-weight: medium;
+  font-size: 1.5rem;
 }
 .image{
 
 }
 .description{
-  
+  text-align: justify;
 }
