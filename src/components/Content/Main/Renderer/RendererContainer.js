@@ -1,4 +1,4 @@
-import React, {useState} from   'react'
+import React, { useState, useEffect } from   'react'
 import {Route} from             'react-router'
 import { findAllParents } from  './findAllParents'
 import BreadCrumbs from         './BreadCrumbs/BreadCrumbs'
@@ -7,17 +7,18 @@ import RenderTiles from         './RenderTiles/RenderTiles'
 
 const RendererContainer = (props) => {
   const [isFirstLoad, setIsFirstLoad] = useState(true)
+  useEffect(() => {
+    if (isFirstLoad) {
+      props.jump(props.location.pathname)
+      setIsFirstLoad(false);
+    }
+  }, [isFirstLoad, props]);
+  let ResultingComponent = props.toRender.meta.hasChildren
+    ? RenderTiles
+    : ExpandedRenderer
   return (
     <div className={props.toRender.meta.id}>
-        <Route render={match => {
-            let ResultingComponent = props.toRender.meta.hasChildren
-              ? RenderTiles
-              : ExpandedRenderer
-
-            if (isFirstLoad) {
-              props.jump(match.location.pathname)
-              setIsFirstLoad(false)
-            }
+        <Route render={() => {
           return (
             <div>
                 <BreadCrumbs crumbs={findAllParents(props.toRender)} jump={props.jump} />
