@@ -4,11 +4,8 @@ import s from './BreadCrumbs.module.css';
 
 const BreadCrumbs = (props) => {
 	if (props.crumbs) {
-		function onClick(event) {
-			props.jump(event.currentTarget.pathname)
-		}
 		const crumbs = props.crumbs.map((crumb, i) => {
-			return (<Link key={i} className={s.link} to={crumb.path} onClick={onClick}>
+			return (<Link key={i} className={s.link} to={crumb.path}>
 				{crumb.title}<div className={s.arrow}></div>
 			</Link>)
 		})

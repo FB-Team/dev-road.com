@@ -5,13 +5,15 @@ import s from './RenderTiles.module.css'
 
 
 const RenderTiles = props => {
-  function onClickTile (event){
-    props.transfer(event.currentTarget.id)
-  }
+
 let NavTiles = props.component.children
-  .map(child => <div key={child.meta.id} className={s.NavTile} id={child.meta.id}
-    onClick={onClickTile}><NavTile to={child.meta.path} onClick={onClickTile}
-    proftitle={child.data.proftitle} profdesc={child.data.profdesc}/></div>
+  .map(child => <div key={child.meta.id}
+                     className={s.NavTile}
+                     id={child.meta.id}>
+                  <NavTile to={child.meta.path}
+                           proftitle={child.data.proftitle}
+                           profdesc={child.data.profdesc}/>
+                </div>
 )
   return (
 <div id='rendererTiles' className="horizontal-flex">{NavTiles}</div>

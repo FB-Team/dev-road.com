@@ -1,11 +1,15 @@
+import React from 'react'
 import { compose } from 'redux';
 import {connect} from 'react-redux'
-import { withRouter } from "react-router-dom";
+import { Route } from "react-router-dom";
 
 import {loadPage,transfer,jump} from '../../../Redux/actions.js'
 import RendererContainer from './Renderer/RendererContainer'
 
-
+const Main = props => {
+  return <Route render={history => <RendererContainer {...props}
+                                    pathname={history.location.pathname}/>}/>
+}
 
 function mapStateToProps(state){
   return{
@@ -13,6 +17,5 @@ function mapStateToProps(state){
   }
 }
 export default compose(
-  withRouter,
   connect(mapStateToProps, {loadPage, transfer, jump})
-)(RendererContainer)
+)(Main)

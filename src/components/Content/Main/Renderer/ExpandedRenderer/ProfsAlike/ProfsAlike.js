@@ -5,9 +5,6 @@ import s from './ProfsAlike.module.css';
 
 
 const ProfsAlike = (props) => {
-  function onClickTile (event){
-    props.jump(event.currentTarget.id)
-  }
   return (
     <div className={s.ProfsAlike}>
       <div className={s.title}>Похожие профессии:</div>
@@ -16,7 +13,7 @@ const ProfsAlike = (props) => {
           props.profsAlike.map( prof => {
             ;
             return  (
-              <div key={prof.urlPath} className={s.NavTile} id={prof.urlPath} onClick={onClickTile}>
+              <div key={prof.urlPath} className={s.NavTile} id={prof.urlPath}>
                 <Navtile to={prof.urlPath} profdesc="" proftitle={prof.title} />
               </div>)
           })
