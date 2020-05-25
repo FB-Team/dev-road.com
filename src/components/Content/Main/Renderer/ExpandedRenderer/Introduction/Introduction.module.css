@@ -1,5 +1,5 @@
 :root{
-  --imgHeight:  260px;
+  --imgHeight:  150px;
 }
 .title{
   margin-top: 10px;
@@ -11,6 +11,8 @@
   display: block;
   margin: 0 auto;
   height: var(--imgHeight, 300px);
+  width: 100%;
+  object-fit: cover;
 }
 .description{
 }
