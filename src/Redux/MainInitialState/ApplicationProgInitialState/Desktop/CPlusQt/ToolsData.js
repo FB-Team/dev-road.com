@@ -38,3 +38,10 @@ export const Paradigms = {
   }],
   children: [OOP,FP]
 }
+export const Git = {
+  name: "Системы контроля версий",
+  links: [
+    {name: 'Основы работы с Github',target:"https://habr.com/ru/post/125799/"}
+  ],
+  children:[]
+}
