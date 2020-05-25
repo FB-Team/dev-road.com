@@ -22,7 +22,8 @@ ReactDOM.render(
 // Learn more about service workers: https://bit.ly/CRA-PWA
 serviceWorker.unregister();
 /*
-TODO: 1) СТИЛИЗАЦИЯ ОКНА И ПЛИТОЧЕК +-
-TODO: 2) РЕФАКТОРИНГ РЕНДЕРИНГА ПЛИТОЧЕК (СОЗДАНИЕ ЕДИНОГО КОМПОНЕНТА СОЗДАЮЩЕГО ОСТАЛЬНЫЕ ПЛИТОЧКИ ПО НЕОБХОДИМОСТИ) +-
-TODO: 3) ИЗОБРАЖЕНИЯ ДЛЯ TILE -
+TODO: 1) JAVA +
+TODO: 2) ИСПРАВИТЬ СПИСКИ
+TODO: 3) ПОФИКСИТЬ РЕАКТ БАГ
+TODO: 4) НАЧАТЬ ИГРЫ
  */

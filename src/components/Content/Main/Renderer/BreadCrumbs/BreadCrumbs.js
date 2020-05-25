@@ -7,8 +7,8 @@ const BreadCrumbs = (props) => {
 		function onClick(event) {
 			props.jump(event.currentTarget.pathname)
 		}
-		const crumbs = props.crumbs.map(crumb => {
-			return (<Link key={crumb.path} className={s.link} to={crumb.path} onClick={onClick}>
+		const crumbs = props.crumbs.map((crumb, i) => {
+			return (<Link key={i} className={s.link} to={crumb.path} onClick={onClick}>
 				{crumb.title}<div className={s.arrow}></div>
 			</Link>)
 		})
