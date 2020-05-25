@@ -8,10 +8,10 @@ const test = {
 }
 function createTools(root, isRoot){
  let items = []
- root.children.forEach((child) => {
+ root.children.forEach((child, i) => {
    if (child.children.length > 0){
-     items.push(<Link links={child.links} content={child.name} innerComponents={createTools(child)}/>)
-   }else items.push(<Link links={child.links} content={child.name}/>)
+     items.push(<Link key={i} links={child.links} content={child.name} innerComponents={createTools(child)}/>)
+   }else items.push(<Link key={i}links={child.links} content={child.name}/>)
  })
 return <ul className={s.ulist}>{items}</ul>
 }

@@ -15,14 +15,15 @@ class Link extends React.Component{
     event.stopPropagation()
   }
   mouseout(event){
+    debugger
     if (event.relatedTarget )
-      if (event.relatedTarget.className != s.linkChild)this.setState({renderLinks: false})
+    if (event.relatedTarget.className != s.linkChild && event.relatedTarget.className != s.linksWrapper) this.setState({renderLinks: false})
   }
   render(){
   let links = this.props.links.map ((link, i) => <a key={i} data-type="linkChild" className={s.linkChild} href={link.target}>{link.name}</a>)
   return (
     this.state.renderLinks  === false ? <li className={s.li}onMouseOver={this.mouseover} onMouseEnter={this.mouseenter}onMouseOut={this.mouseout}>{this.props.content}{this.props.innerComponents}</li>:
-    <li className={s.li}onMouseOver={this.mouseover} onMouseOut={this.mouseout} onMouseEnter={this.mouseenter}>{this.props.content}{links}{this.props.innerComponents}</li>
+    <li className={s.li}onMouseOver={this.mouseover} onMouseOut={this.mouseout} onMouseEnter={this.mouseenter}>{this.props.content}<div className={s.linksWrapper}>{links}</div>{this.props.innerComponents}</li>
   )
   }
 }

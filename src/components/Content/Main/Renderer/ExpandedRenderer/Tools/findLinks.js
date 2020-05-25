@@ -1,5 +1,3 @@
-import React from 'react'
-
  const findLinks = (tools, name) => {
    if (tools.name === name) return tools.links
       if (tools.children.length > 0){
