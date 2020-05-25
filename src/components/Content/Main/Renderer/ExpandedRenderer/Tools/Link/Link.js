@@ -7,23 +7,22 @@ class Link extends React.Component{
     this.state = {
       renderLinks: false
     }
-    this.mouseleave = this.mouseleave.bind(this)
-    this.mouseenter = this.mouseenter.bind(this)
+    this.mouseout = this.mouseout.bind(this)
+    this.mouseover = this.mouseover.bind(this)
   }
-  mouseleave (event){
-    if (true){}
-      this.setState({renderLinks: false})
+  mouseover (event){
+    this.setState({renderLinks: true})
+    event.stopPropagation()
   }
-  mouseenter(event){
-    if (event.currentTarget === event.target){
-        this.setState({renderLinks: true})
-    }
+  mouseout(event){
+    if (event.relatedTarget )
+      if (event.relatedTarget.className != s.linkChild)this.setState({renderLinks: false})
   }
   render(){
-  let links = this.props.links.map ((link, i) => <a key={i} data-id="child" href={link.target}>{link.name}</a>)
+  let links = this.props.links.map ((link, i) => <a key={i} data-type="linkChild" className={s.linkChild} href={link.target}>{link.name}</a>)
   return (
-    this.state.renderLinks  === false ? <li data-id="parent" className={s.li} onMouseEnter={this.mouseenter} onMouseLeave={this.mouseleave}>{this.props.content}{this.props.innerComponents}</li>:
-    <li className={s.li} onMouseOver={this.mouseenter} onMouseLeave={this.mouseleave}>{this.props.content}<br/>{links}{this.props.innerComponents}</li>
+    this.state.renderLinks  === false ? <li className={s.li}onMouseOver={this.mouseover} onMouseEnter={this.mouseenter}onMouseOut={this.mouseout}>{this.props.content}{this.props.innerComponents}</li>:
+    <li className={s.li}onMouseOver={this.mouseover} onMouseOut={this.mouseout} onMouseEnter={this.mouseenter}>{this.props.content}{links}{this.props.innerComponents}</li>
   )
   }
 }

@@ -1,0 +1,32 @@
+.linksAndContent{
+  display:flex;
+}
+.linksWrapper{
+  display: flex;
+}
+.linkChild{
+  text-decoration: none;
+  background-color: #35b34f;
+  color: white;
+  border-radius: 5px;
+  margin: 5px;
+  padding: 2px;
+  animation: bubble 1s 1 ease-in-out;
+}
+@keyframes  bubble {
+from {
+  opacity: 0.15;
+}
+25%{
+  opacity: 0.35;
+}
+50%{
+  opacity: 0.6;
+}
+75%{
+  opacity: 0.85;
+}
+to{
+  opacity: 1;
+}
+}
