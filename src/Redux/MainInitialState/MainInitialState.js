@@ -1,7 +1,9 @@
 import { findComponent } from '../findComponent';
 import ApplicationProgInitialState from './ApplicationProgInitialState/ApplicationProgInitialState.js';
+import OtherProg from './OtherProgInitialState/OtherProg';
 import SystemProgInitialState from './SystemProgInitialState';
 import WebProgInitialState from './WebProgInitialState';
+
 
 //КИРИЛЛ ДОБАВИЛ БЕКСЛЭШ В СВОЙСТВО PATH, ДОБАВИЛ СВОЙСТВО ID В META
 const Root = {
@@ -14,7 +16,7 @@ const Root = {
 	data: {
 		proftitle: 'Главная'
 	},
-	children: [ApplicationProgInitialState, SystemProgInitialState, WebProgInitialState]
+	children: [ApplicationProgInitialState, SystemProgInitialState, WebProgInitialState, OtherProg]
 }
 
 const addParents = root => {
