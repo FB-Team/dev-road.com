@@ -5,7 +5,7 @@
   display: flex;
 }
 .linkChild{
-  height: 100%;
+  font-size: 0.8em;
   text-decoration: none;
   background-color: #35b34f;
   color: white;
@@ -16,6 +16,9 @@
 }
 .li{
   margin-left: 15px;
+}
+.ul{
+  height: 80%;
 }
 @keyframes  bubble {
 from {

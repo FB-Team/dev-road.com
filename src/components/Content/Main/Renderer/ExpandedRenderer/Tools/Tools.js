@@ -14,7 +14,7 @@ const FIRST_CHILD = 0
      (button, i) => <button key={i} data-number={i} className={s.button} onClick={handleClick}>{button.name}</button>
    )
   return (
-<div id='Tools'>
+<div id={s.Tools}>
 <div className={s.buttonsWrapper}>{buttons}</div>
  <RenderTools tool={currentTool}/>
 </div>

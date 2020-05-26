@@ -1,6 +1,6 @@
 import React from 'react';
 import Link from './Link/Link';
-
+import s from './Link/Link.module.css'
 function createTools(root, isRoot = true){
  let items = []
  root.children.forEach((child, i) => {
@@ -8,7 +8,7 @@ function createTools(root, isRoot = true){
      items.push(<Link key={i} links={child.links} content={child.name} innerComponents={createTools(child, false)}/>)
    }else items.push(<Link key={i}links={child.links} content={child.name}/>)
  })
-return( isRoot ? <ul><Link links={root.links} content={root.name}  innerComponents={<ul>{items}</ul>}/></ul> :
+return( isRoot ? <ul className={s.ul}><Link links={root.links} content={root.name}  innerComponents={<ul>{items}</ul>}/></ul> :
 <ul>{items}</ul>
 )
 
