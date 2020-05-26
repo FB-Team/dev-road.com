@@ -1,11 +1,5 @@
-export const CPlus = {
-  name: 'C++',
-  links: [{
-    name: 'Изучение синтаксиса и особенностей С++',
-    target: "https://tproger.ru/books/cpp-books-beginners"
-  }],
-  children: [/*Algorithms, Libs*/ ]
-}
+import { GitHub } from '../CNET/ToolsData';
+
 export const Qt = {
   name: 'Qt',
   links: [{
@@ -36,7 +30,7 @@ export const Paradigms = {
     name: 'Ознакомление с общепринятыми парадигмами и паттернами программирования',
     target: "http://itandlife.ru/programming/cpp/paradigmy-programmirovaniya-v-c/"
   }],
-  children: [OOP,FP]
+  children: []
 }
 export const Git = {
   name: "Системы контроля версий",
@@ -44,4 +38,13 @@ export const Git = {
     {name: 'Основы работы с Github',target:"https://habr.com/ru/post/125799/"}
   ],
   children:[]
+}
+
+export const CPlus = {
+  name: 'C++',
+  links: [{
+    name: 'Изучение синтаксиса и особенностей С++',
+    target: "https://tproger.ru/books/cpp-books-beginners"
+  }],
+  children: [GitHub, Paradigms]
 }

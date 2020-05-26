@@ -22,7 +22,7 @@ class Link extends React.Component{
   let links = this.props.links.map ((link, i) => <a key={i} data-type="linkChild" className={s.linkChild} href={link.target}>{link.name}</a>)
   return (
     this.state.renderLinks  === false ? <li className={s.li}onMouseOver={this.mouseover} onMouseEnter={this.mouseenter}onMouseOut={this.mouseout}>{this.props.content}{this.props.innerComponents}</li>:
-    <li className={s.li}onMouseOver={this.mouseover} onMouseOut={this.mouseout} onMouseEnter={this.mouseenter}>{this.props.content}<div className={s.linksWrapper}>{links}</div>{this.props.innerComponents}</li>
+    <li className={s.li}onMouseOver={this.mouseover} onMouseOut={this.mouseout} onMouseEnter={this.mouseenter}><div className={s.linksWrapper}>{this.props.content}{links}</div>{this.props.innerComponents}</li>
   )
   }
 }
