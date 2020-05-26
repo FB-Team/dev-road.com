@@ -1,14 +1,22 @@
-import React from 'react'
+import React, { useState } from   'react'
 
-import createTools from './createTools'
-import findLinks from './findLinks';
+import RenderTools from '../../RenderTools/RenderTools';
 import s from './Tools.module.css';
 
+const FIRST_CHILD = 0
 
  const Tools = (props) => {
+   const [currentTool, setTool] = useState(props.tools[FIRST_CHILD])
+   function handleClick(event){
+     setTool(props.tools[event.target.dataset.number])
+   }
+   const buttons = props.tools.map(
+     (button, i) => <button key={i} data-number={i} className={s.button} onClick={handleClick}>{button.name}</button>
+   )
   return (
 <div id='Tools'>
-{createTools(props.tools)}
+<div className={s.buttonsWrapper}>{buttons}</div>
+ <RenderTools tool={currentTool}/>
 </div>
   )
 }
