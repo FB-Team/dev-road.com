@@ -15,7 +15,6 @@ class Link extends React.Component{
     event.stopPropagation()
   }
   mouseout(event){
-    debugger
     if (event.relatedTarget )
     if (event.relatedTarget.className != s.linkChild && event.relatedTarget.className != s.linksWrapper) this.setState({renderLinks: false})
   }

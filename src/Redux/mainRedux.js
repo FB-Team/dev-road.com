@@ -41,6 +41,7 @@ function rootReducer(state = initialState, action) {
 				...state,
 				toRender: newToRender
 			}
+		case actions.LOAD_TOOLS:
 
 		default:
 			return state
