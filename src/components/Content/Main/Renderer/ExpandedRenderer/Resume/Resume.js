@@ -14,21 +14,17 @@ const Resume = (props) => {
 };
 
 const PopularQuest = (props) => {
-  const onQuestionClick = e => {
-    
-    e.currentTarget.classList.toggle(s.active)
-  }
   let questions = props.questions.map( q => {
-    return <div className={s.questionWithAnswer} key={q.name}>
-      <dt onClick={onQuestionClick}>{q.name}</dt>
-      <dd>{q.target}</dd>
-    </div>
+    return <details className={s.questionWithAnswer} key={q.name}>
+      <summary>{q.name}</summary>
+      <div>{q.target}</div>
+    </details>
   })
 
   return (
     <div className={s.PopularQuest}>
       <div className={s.title}>Часто задаваемые вопросы:</div>
-      <dl className={s.questionWithAnswerContainer}>{questions}</dl>
+      <div className={s.questionWithAnswerContainer}>{questions}</div>
     </div>
   )
 };

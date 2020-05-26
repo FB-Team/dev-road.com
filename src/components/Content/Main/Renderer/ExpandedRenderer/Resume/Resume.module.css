@@ -11,41 +11,36 @@
 }
 
 .questionWithAnswer {
-  display: flex;
+  position: relative;
 }
 
-.questionWithAnswer dt,
-.questionWithAnswer dd {
+.questionWithAnswer summary,
+.questionWithAnswer div {
   padding: 5px;
 }
 
-.questionWithAnswer dt {
+.questionWithAnswer summary {
   position: relative;
   width: 500px;
   background-color: gray;
   border: 0.1px solid lightgray;
 }
 
-.questionWithAnswer dt:after {
+.questionWithAnswer div {
   position: absolute;
+  left: 520px;
   right: 0;
-  content: '>'
+  top: 0;
 }
 
-.questionWithAnswer dt.active:after {
-  transform: rotate(90deg);
+.questionWithAnswer summary::-webkit-details-marker {
 }
 
-.questionWithAnswer dd{
-  display: none;
+.questionWithAnswer div{
   border-radius: 5px;
 }
 
-.questionWithAnswer dt.active + dd{
-  display: block;
-}
-
-.questionWithAnswer dd {
+.questionWithAnswer div {
   background-color: #35b34f;
 }
 

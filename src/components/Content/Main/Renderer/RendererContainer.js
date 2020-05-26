@@ -8,7 +8,7 @@ const RendererContainer = (props) => {
   useEffect(() => {
       props.jump(props.pathname)
   }, [props.pathname]);
-  let ResultingComponent = props.toRender.meta.hasChildren
+  let ResultingComponent = props.toRender.children.length > 0
     ? RenderTiles
     : ExpandedRenderer
   return (

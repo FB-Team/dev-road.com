@@ -1,6 +1,4 @@
-export const CPP = {
 
-}
 export const WPF = {
   name: 'WPF',
   links: [

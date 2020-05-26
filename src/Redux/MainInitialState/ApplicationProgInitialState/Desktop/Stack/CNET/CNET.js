@@ -1,4 +1,4 @@
-import { Tools } from './Tools/Tools'
+import { DB, GitHub, UWP, WPF } from './ToolsData';
 
 const CNET = {
   name: 'С#',
