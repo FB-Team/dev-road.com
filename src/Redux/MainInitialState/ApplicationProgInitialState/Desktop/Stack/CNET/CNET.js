@@ -1,4 +1,4 @@
-import { CNETSynt, DB, GitHub, UWP, WPF } from './ToolsData';
+import { CNETSynt, DB, GitHub, WPF } from './ToolsData';
 
 
 const CNET = {
