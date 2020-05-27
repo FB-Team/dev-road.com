@@ -1,3 +1,5 @@
+import {GitHub as CommonGitHub} from '../../../../Common/Tools/commonTools'
+
 
 export const WPF = {
   name: 'WPF',
@@ -32,28 +34,7 @@ export const UWP = {
   children: []
 }
 
-export const GitHub = {
-  name: 'GitHub',
-  links: [
-    {
-      name: 'Что такое система контроля версий и зачем она нужна?',
-      target: 'https://git-scm.com/book/ru/v2/Введение-О-системе-контроля-версий'
-    },
-    {
-      name: 'Основы Git',
-      target: 'https://git-scm.com/book/ru/v2/Введение-Основы-Git'
-    },
-    {
-      name: 'Основные команды Git',
-      target: 'https://git-scm.com/book/ru/v2/Appendix-C%3A-Команды-Git-Основные-команды'
-    },
-    {
-      name: 'GitHub + Visual Studio',
-      target: 'https://habr.com/ru/sandbox/112936/'
-    }
-  ],
-  children: []
-}
+export const GitHub = CommonGitHub
 
 export const DB = {
   name: 'Базы данных',
@@ -78,9 +59,8 @@ export const DB = {
   children: []
 }
 
-
-export const Tools = {
-  name: 'С#',
+export const CNETSynt = {
+  name: 'Язык C# и его синтаксис',
   links: [
     {
       name: 'Metanit',
@@ -104,5 +84,5 @@ export const Tools = {
     }
 
   ],
-  children: [WPF, UWP, GitHub, DB]
+  children: [],
 }

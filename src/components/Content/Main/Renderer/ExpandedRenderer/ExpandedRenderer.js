@@ -14,8 +14,8 @@ import Tools from './Tools/Tools';
     <Introduction title={props.component.data.proftitle} imgPath={expanded.imgPath} description={expanded.desc}/>
     <Tools tools={expanded.tools}/>
     <ProsAndCons pros={expanded.prosAndCons.pros} cons={expanded.prosAndCons.cons}/>
-    <ProfsAlike profsAlike={expanded.profsAlike.result} jump={props.jump}/>
     <Resume conclusion={expanded.conclusion} popularQuest={expanded.popularQuest}/>
+    <ProfsAlike profsAlike={expanded.profsAlike.result} jump={props.jump}/>
 </div>
   )
 }

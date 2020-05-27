@@ -3,11 +3,25 @@
   justify-content: center;
 }
 
-.NavTile {
-  margin-right: 20px;
+.NavTile div{
+  font-size: 0.8rem;
 }
 
 .NavTile a > div {
-  width: 150px;
-  height: 150px;
+  width: 100px;
+  height: 100px;
+}
+
+.NavTile a > div{
+  border-right: 0px;
+  border-radius: 0;
+}
+
+.container .NavTile:last-child a > div{
+  border-right: 3px solid #F4A8E8;
+}
+
+
+.title {
+  text-align: center;
 }

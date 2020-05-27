@@ -1,12 +1,19 @@
 import React from 'react';
+import ReactHtmlParser from 'react-html-parser';
+
 import s from './Resume.module.css';
 
+
 const Resume = (props) => {
+  let conclusion = props.conclusion
+  if (! conclusion.startsWith("<p>")) {conclusion = `<p>${conclusion}</p>`}
+  conclusion = ReactHtmlParser(conclusion)
+
   return (
     <div className={s.Resume}>
       <div className={s.conclusion}>
         <div className={s.title}>Выводы</div>
-        <p>{props.conclusion}</p>
+        <p>{conclusion}</p>
       </div>
     <PopularQuest questions={props.popularQuest}/>
     </div>
