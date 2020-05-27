@@ -1,5 +1,6 @@
-import Android from './Android/Android';
-import IOS from './IOS/IOS';
+import AndroidBranch from './Stack/AndroidBranch/AndroidBranch';
+import IOSBranch from './Stack/IOSBranch/IOSBranch';
+
 
 const Mobile = {
   meta: {
@@ -19,7 +20,7 @@ Mobile.data.expanded = {
   <p>На сегодня, существует два основных направления в мобильной разработке - разработка под IOS и разработка под Android. Какую из них выбрать - решать вам, информацию для сравнительного анализа вы можете найти ниже</p>`,
 	imgPath: '', // IDEA: Можно будет добавить изображение с разными стеками технологий (объединить через граф. редактор)
                // FEED: Отличная идея!
-	tools: [AndroidBranch, IOSBranch],
+	tools: [AndoridBranch, IOSBranch],
 	prosAndCons: {
 		pros: ["Высокооплачиваемотсь", "Востребованность", "Популярность","Невысокий порог вхождения", "Сложность разработки"],
 		cons: ["Высокая конкуренция", "Ощутимые отличия разработки между IOS и Android"]
