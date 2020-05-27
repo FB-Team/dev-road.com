@@ -1,4 +1,4 @@
-import CNET from '../../../Desktop/Stack/CNET/CNET';
+import { CNETSynt } from '../../../Desktop/Stack/CNET/ToolsData';
 import Unity from './Unity';
 
 const UnityBranch = {
@@ -9,7 +9,7 @@ const UnityBranch = {
       target: 'https://unity.com/ru/learn/partner-courses'
     }*/
   ],
-  children: [CNET,Unity],
+  children: [CNETSynt,Unity],
 	conclusion: 'Используется для разработки мобильных игр и платформеров. Простота и использование современных С# и Javascript выгодно выделяет его на фоне аналогичных решений, а низкий порог входа и наибольшая востребованность на рынке труда не могут не подкупать. Условно бесплатен.'
 }
 export default UnityBranch
