@@ -23,7 +23,7 @@ export const WPF = {
   children: []
 }
 
-export const UWP = {
+/*export const UWP = {
   name: 'UWP',
   links: [
     {
@@ -32,7 +32,7 @@ export const UWP = {
     },
   ],
   children: []
-}
+}*/
 
 export const GitHub = CommonGitHub
 
