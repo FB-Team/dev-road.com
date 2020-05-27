@@ -23,7 +23,7 @@ const CNET = {
       name: 'Welcome to C# 9.0',
       target: 'https://devblogs.microsoft.com/dotnet/welcome-to-c-9-0/'
     }
-
+      
   ],
   children: [WPF, UWP, GitHub, DB],
 	conclusion: ''

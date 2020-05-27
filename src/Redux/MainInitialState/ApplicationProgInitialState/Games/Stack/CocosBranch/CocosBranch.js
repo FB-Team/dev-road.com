@@ -11,6 +11,6 @@ const CocosBranch = {
     */}
   ],
   children: [CPlus,Cocos],
-	conclusion: ''
+	conclusion: 'Используется для разработки 2D игр, бесплатный и очень эффективный инструмент, однако, на качественное освоение С++ и Cocos может потребоваться время.'
 }
 export default CocosBranch

@@ -17,6 +17,7 @@ const FIRST_CHILD = 0
 <div id={s.Tools}>
 <div className={s.buttonsWrapper}>{buttons}</div>
  <RenderTools tool={currentTool}/>
+ <div className={s.conclusion}>{currentTool.conclusion}</div>
 </div>
   )
 }
