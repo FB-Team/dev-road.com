@@ -1,13 +1,6 @@
-import { C } from './C/C'
-import Theory from './Theory/Theory'
-import { Electronics } from './Electronics/Electronics'
-
-const FirmwareTools = {
-	name: 'Встроенное обеспечение',
-	links: [],
-	children: [Theory, C, Electronics],
-	conclusion: ''
-}
+import { C } from './C/C';
+import { Electronics } from './Electronics/Electronics';
+import Theory from './Theory/Theory';
 
 export const Firmware = {
     meta: {
@@ -25,7 +18,7 @@ export const Firmware = {
 Firmware.data.expanded = {
 	desc: `<p>Задачей программиста является разработка встроенного программного обеспечения.`,
 	imgPath: '',
-	tools: [FirmwareTools],
+	tools: [Theory, C, Electronics],
 	prosAndCons: {
 		pros: ["Базовая информация не устаревает", "Хороший специалист на вес золота", "Интересные задачи"],
 		cons: ["Сложность изучения", "Сложно найти работу", "Малый спрос"]
