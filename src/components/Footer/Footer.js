@@ -5,7 +5,7 @@ class Footer extends React.Component{
   render () {
     return (
       <footer className={s.Footer}>
-        <div className={s.copyright}>&copy; 2020 Roadmap4devs</div>
+        <div className={s.copyright}>&copy;Roadmap4devs, 2020</div>
         <div className={s["rel-sites"]}>
           <div className={s["rel_sites-title"]}>
             Вас так же может заинтересовать:
