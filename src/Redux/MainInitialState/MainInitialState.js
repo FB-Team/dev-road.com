@@ -1,7 +1,8 @@
 import { findComponent } from '../findComponent';
 import ApplicationProgInitialState from './ApplicationProgInitialState/ApplicationProgInitialState.js';
 import OtherProg from './OtherProgInitialState/OtherProg';
-import WebProgInitialState from './WebProgInitialState';
+import WebProgInitialState from './WebProgInitialState/WebProgInitialState';
+
 
 
 //КИРИЛЛ ДОБАВИЛ БЕКСЛЭШ В СВОЙСТВО PATH, ДОБАВИЛ СВОЙСТВО ID В META
