@@ -1,4 +1,4 @@
-const Cashing = {
+const Caching = {
   name: 'Кэширование',
   links: [
     {
@@ -9,4 +9,4 @@ const Cashing = {
   children: []
 }
 
-export default Cashing
+export default Caching

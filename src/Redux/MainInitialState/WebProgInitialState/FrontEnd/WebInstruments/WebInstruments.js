@@ -7,7 +7,7 @@ const NPM = {
   children: [],
   conclusion: ''
 }
-const Webpack = {
+export const Webpack = {
   name: "Webpack",
   links: [{
     name: "Руководство по Webpack",
