@@ -8,12 +8,11 @@ import DB_Back from '../CommonTools/DB_Back/DB_Back';
 import Internet from '../../../FrontEnd/Theory/Internet/Internet';
 import Security from '../CommonTools/Security/Security';
 
-
 const CSharp = {
   name: 'C#(ASP.NET)',
   links: [],
   children: [Internet, BasicFront, CSharpASPNet, DB_Back, API, GitHub, Caching, Security, Architectures],
-	conclusion: ''
+	conclusion: 'Из плюсов C# можно выделить хорошую поддержку со стороны Microsoft.'
 }
 
 export default CSharp

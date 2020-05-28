@@ -8,12 +8,11 @@ import DB_Back from '../CommonTools/DB_Back/DB_Back';
 import Internet from '../../../FrontEnd/Theory/Internet/Internet';
 import Security from '../CommonTools/Security/Security';
 
-
 const ExpressNode = {
-  name: 'Node JS',
+  name: 'Node JS(Express)',
   links: [],
   children: [Internet, BasicFront, Express, DB_Back, API, GitHub, Caching, Security, Architectures],
-	conclusion: ''
+	conclusion: 'NodeJS является удобным фреймворком для работы с frontEnd, так как использует один и тот же язык.'
 }
 
 export default ExpressNode

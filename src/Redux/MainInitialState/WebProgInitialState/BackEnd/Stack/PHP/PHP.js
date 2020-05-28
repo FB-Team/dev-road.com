@@ -9,9 +9,8 @@ import Internet from '../../../FrontEnd/Theory/Internet/Internet';
 import Security from '../CommonTools/Security/Security';
 
 
-
 const PHP = {
-  name: 'PHP',
+  name: 'PHP(Lavarel)',
   links: [],
   children: [Internet, BasicFront, PHPLavarel, DB_Back, API, GitHub, Caching, Security, Architectures],
 	conclusion: 'PHP - однозначно наиболее широко используемый яп в сервеной разработке, именно с помощью этого языка вы найдете наибольшее количество вакансий'

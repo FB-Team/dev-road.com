@@ -1,5 +1,5 @@
-import { GitHub } from '../../../../Common/Tools/commonTools';
 import { PythonDjango } from './ToolsData';
+import { GitHub } from '../../../../Common/Tools/commonTools';
 import API from '../CommonTools/API/API';
 import Architectures from '../CommonTools/Architectures/Architectures';
 import BasicFront from '../CommonTools/BasicFront/BasicFront';
@@ -9,12 +9,11 @@ import Internet from '../../../FrontEnd/Theory/Internet/Internet';
 import Security from '../CommonTools/Security/Security';
 
 
-
 const Python = {
-  name: 'Python',
+  name: 'Python(Django)',
   links: [],
   children: [Internet, BasicFront, PythonDjango, DB_Back, API, GitHub, Caching, Security, Architectures],
-	conclusion: ''
+	conclusion: 'Python является легким и доступным в изучении языком и является неплохим инструментом для backend разработки'
 }
 
 export default Python
