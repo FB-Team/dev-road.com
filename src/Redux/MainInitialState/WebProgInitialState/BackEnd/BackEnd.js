@@ -2,6 +2,7 @@ import CSharp from './Stack/CSharp/CSharp';
 import ExpressNode from './Stack/ExpressNode/ExpressNode'
 import PHP from './Stack/PHP/PHP';
 import Python from './Stack/Python/Python';
+import Ruby from './Stack/Ruby/Ruby';
 
 
 export const BackEnd = {
@@ -20,12 +21,12 @@ export const BackEnd = {
 }
 
 BackEnd.data.expanded = {
-	desc: ``,
+	desc: `Backend разработчик занимается разработкой приложения со стороны сервера, той частью, где пользователь ничего не видит. Он взаимодействует с базой данных, настраивает сервер. Программист должен хорошо обдумывать архитектуру приложения, обеспечить эффективную работу с базой данных. Основным инструментом backend разработчика являются серверные языки программирования: самые популярные из них представлены ниже, это Node JS, PHP, Python, C# и Ruby.`,
 	imgPath: '',
-	tools: [ExpressNode, CSharp, Python, PHP], // Ruby   // Java сложно
+	tools: [PHP, ExpressNode, Python, CSharp, Ruby], // Java сложно
 	prosAndCons: {
-		pros: [],
-		cons: []
+		pros: ["Высокая зарплата", "Перспективная профессия", "Высокая востребованность"],
+		cons: ["Сложность обучения", "Множество языков"]
 	},
 	profsAlike: {
 		ids: [],
@@ -35,16 +36,16 @@ BackEnd.data.expanded = {
 			urlPath: ""
 		}]
 	},
-	conclusion: '<p></p>',
+	conclusion: '<p>Back-end разработчик получает высокую зарплату за свою работу, но на обучение требует потратить много времени и сил.</p>',
 	popularQuest: [
     {
 		name: 'Какая средняя зарплата специалиста?',
-		target: '~700$ для начинающего, ~2000$ и больше для middle разработчика'
+		target: '~750$ для начинающего, ~2000$ и больше для middle разработчика'
 	}, {
 		name: 'Насколько популярна профессия?',
-		target: 'Профессия не слишком популярна.'
+		target: 'Профессия популярна и востребована. Хороших специалистов найти сложно.'
 	}, {
-		name: 'Перспективы desktop',
-		target: 'В последнее время данная область угасает, все больше и больше переходит в Web: веб-приложения, облачные сервисы и другое.'
+		name: 'Перспективы',
+		target: 'Есть возможность выучить front end и стать full stack разработчиком.'
 	}]
 }

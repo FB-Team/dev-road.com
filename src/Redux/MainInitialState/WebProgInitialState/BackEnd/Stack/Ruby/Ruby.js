@@ -1,5 +1,5 @@
-import { Express } from './ToolsData';
 import { GitHub } from '../../../../Common/Tools/commonTools';
+import { RubyRails } from './ToolsData';
 import API from '../CommonTools/API/API';
 import Architectures from '../CommonTools/Architectures/Architectures';
 import BasicFront from '../CommonTools/BasicFront/BasicFront';
@@ -8,11 +8,12 @@ import DB_Back from '../CommonTools/DB_Back/DB_Back';
 import Internet from '../../../FrontEnd/Theory/Internet/Internet';
 import Security from '../CommonTools/Security/Security';
 
-const ExpressNode = {
-  name: 'Node JS(Express)',
+
+const Ruby = {
+  name: 'Ruby(Rails)',
   links: [],
-  children: [Internet, BasicFront, Express, DB_Back, API, GitHub, Cashing, Security, Architectures],
-	conclusion: 'NodeJS является удобным фреймворком для работы с frontEnd, так как использует один и тот же язык.'
+  children: [Internet, BasicFront, RubyRails, DB_Back, API, GitHub, Cashing, Security, Architectures],
+	conclusion: 'Ruby является очень удобным для использования человеком языком программирования. При переходе с него на другой язык обычно возникают сложности.'
 }
 
-export default ExpressNode
+export default Ruby

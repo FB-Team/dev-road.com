@@ -10,10 +10,10 @@ import Security from '../CommonTools/Security/Security';
 
 
 const Python = {
-  name: 'Python',
+  name: 'Python(Django)',
   links: [],
   children: [Internet, BasicFront, PythonDjango, DB_Back, API, GitHub, Cashing, Security, Architectures],
-	conclusion: ''
+	conclusion: 'Python является легким и доступным в изучении языком и является неплохим инструментом для backend разработки'
 }
 
 export default Python

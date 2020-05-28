@@ -12,7 +12,7 @@ const CSharp = {
   name: 'C#(ASP.NET)',
   links: [],
   children: [Internet, BasicFront, CSharpASPNet, DB_Back, API, GitHub, Cashing, Security, Architectures],
-	conclusion: ''
+	conclusion: 'Из плюсов C# можно выделить хорошую поддержку со стороны Microsoft.'
 }
 
 export default CSharp
