@@ -34,7 +34,7 @@ const Typescript = {
   children: [],
   conclusion: ''
 }
-const WebInstruments=  {
+const WebInstruments = {
   name: "Будет большим плюсом знание следующих инструментов",
   links: [],
   children: [NPM, Webpack, SASS, Typescript],

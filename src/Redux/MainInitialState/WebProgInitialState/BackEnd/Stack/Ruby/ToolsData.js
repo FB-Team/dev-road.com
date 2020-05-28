@@ -1,6 +1,3 @@
-
-
-
 export const RubyRails = {
   name: 'Ruby & Rails',
   links: [
