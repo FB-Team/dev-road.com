@@ -1,29 +1,23 @@
 import React from 'react';
+import { useState } from 'react'
 import s from './Link.module.css';
+
 const mullet = 'mullet'
-class Link extends React.Component{
-  constructor(props){
-    super(props)
-    this.state = {
-      renderLinks: false
-    }
-    this.mouseout = this.mouseout.bind(this)
-    this.mouseover = this.mouseover.bind(this)
-  }
-  mouseover (event){
-    this.setState({renderLinks: true})
+const  Link = (props) =>{
+  const [renderLinks, setRenderLinks]  = useState(false)
+  function mouseover (event){
+    setRenderLinks(true)
     event.stopPropagation()
   }
-  mouseout(event){
+  function mouseout(event){
     if (event.relatedTarget )
-    if (event.relatedTarget.className != s.linkChild && event.relatedTarget.className != s.linksWrapper) this.setState({renderLinks: false})
+    if (event.relatedTarget.className != s.linkChild && event.relatedTarget.className != s.linksWrapper) setRenderLinks(false)
   }
-  render(){
-  let links = this.props.links.map ((link, i) => <a key={i} data-type="linkChild" className={s.linkChild} href={link.target}>{link.name}</a>)
+  let links = props.links.map ((link, i) => <a key={i} data-type="linkChild" className={s.linkChild} href={link.target}>{link.name}</a>)
+  const mainLi = s.li  +" "+  props.extraClass;
   return (
-    this.state.renderLinks  === false ? <li className={s.li}onMouseOver={this.mouseover} onMouseEnter={this.mouseenter}onMouseOut={this.mouseout}>{this.props.content}{this.props.innerComponents}</li>:
-    <li className={s.li}onMouseOver={this.mouseover} onMouseOut={this.mouseout} onMouseEnter={this.mouseenter}><div className={s.linksWrapper}>{this.props.content}{links}</div>{this.props.innerComponents}</li>
+    renderLinks  === false ? <li className={mainLi}onMouseOver={mouseover} onMouseOut={mouseout}>{props.content}{props.innerComponents}</li>:
+    <li className={mainLi}onMouseOver={mouseover} onMouseOut={mouseout}><div className={s.linksWrapper}>{props.content}{links}</div>{props.innerComponents}</li>
   )
-  }
 }
 export default Link

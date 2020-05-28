@@ -1,6 +1,7 @@
-import { FullStack } from './FullStack/FullStack';
 import { BackEnd } from './BackEnd/BackEnd';
-import { FrontEnd } from './FrontEnd/FrontEnd';
+import { FullStack } from './FullStack/FullStack';
+import FrontEnd from './FrontEnd/FrontEnd';
+
 
 const WebProgInitialState = {
   meta:{

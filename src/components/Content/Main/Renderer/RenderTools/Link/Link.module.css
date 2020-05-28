@@ -16,6 +16,11 @@
 }
 .li{
   margin-left: 15px;
+  list-style-type: " - ";
+}
+.main_li{
+  list-style-type: disc;
+  margin-left: 0px;
 }
 .ul{
   height: 80%;
