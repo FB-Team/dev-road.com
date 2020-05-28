@@ -1,7 +1,7 @@
 import { findComponent } from '../findComponent';
 import ApplicationProgInitialState from './ApplicationProgInitialState/ApplicationProgInitialState.js';
 import OtherProg from './OtherProgInitialState/OtherProg';
-import SystemProgInitialState from './SystemProgInitialState';
+import SystemProgInitialState from './SystemProgInitialState/SystemProgInitialState';
 import WebProgInitialState from './WebProgInitialState';
 
 
