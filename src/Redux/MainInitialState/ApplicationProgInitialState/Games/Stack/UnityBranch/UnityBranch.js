@@ -1,4 +1,6 @@
-import { CNETSynt } from '../../../Desktop/Stack/CNET/ToolsData';
+import {
+  CNETSynt,
+} from '../../../../OtherProgInitialState/Desktop/Stack/CNET/ToolsData';
 import Unity from './Unity';
 
 const UnityBranch = {

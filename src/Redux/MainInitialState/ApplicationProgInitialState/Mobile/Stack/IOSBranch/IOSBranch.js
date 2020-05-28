@@ -1,4 +1,6 @@
-import { GitHub } from '../../../Desktop/Stack/CNET/ToolsData';
+import {
+  GitHub,
+} from '../../../../OtherProgInitialState/Desktop/Stack/CNET/ToolsData';
 import Architectures from './Architectures/Architectures';
 import CocoaPods from './CocoaPods/CocoaPods';
 import CoreData from './CoreData/CoreData';

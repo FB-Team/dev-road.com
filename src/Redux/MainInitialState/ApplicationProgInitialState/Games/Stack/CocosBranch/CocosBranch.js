@@ -1,6 +1,8 @@
-import { CPlus } from '../../../Desktop/Stack/CPlusQt/ToolsData';
-import Cocos from './Cocos';
 
+import {
+  CPlus,
+} from '../../../../OtherProgInitialState/Desktop/Stack/CPlusQt/ToolsData';
+import Cocos from './Cocos';
 
 const CocosBranch = {
   name: 'Cocos',
