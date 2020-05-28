@@ -9,11 +9,11 @@ import Internet from '../../../FrontEnd/Theory/Internet/Internet';
 import Security from '../CommonTools/Security/Security';
 
 
-const Java = {
-  name: 'Node JS',
+const Python = {
+  name: 'Python',
   links: [],
   children: [Internet, BasicFront, PythonDjango, DB_Back, API, GitHub, Cashing, Security, Architectures],
 	conclusion: ''
 }
 
-export default Java
+export default Python
