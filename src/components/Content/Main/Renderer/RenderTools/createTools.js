@@ -8,7 +8,7 @@ function createTools(root, isRoot = true){
      items.push(<Link key={i} links={child.links} content={child.name} extraClass={s.main_li} innerComponents={createTools(child, false)}/>)
    }else items.push(<Link extraClass="" key={i}links={child.links} content={child.name}/>)
  })
-return( isRoot ? <ul className={s.ul}><Link extraClass={s.main_li}k links={root.links} content={root.name}  innerComponents={<ul>{items}</ul>}/></ul> :
+return( isRoot ? <ul className={s.ul}><Link extraClass={s.main_category} links={root.links} content={root.name}  innerComponents={<ul>{items}</ul>}/></ul> :
 <ul>{items}</ul>
 )
 

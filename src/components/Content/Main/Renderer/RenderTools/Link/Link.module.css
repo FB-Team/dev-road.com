@@ -17,10 +17,19 @@
 .li{
   margin-left: 15px;
   list-style-type: " - ";
+  font-size: 1em;
+  font-weight: 300;
 }
 .main_li{
   list-style-type: disc;
   margin-left: 0px;
+  font-size: 1em;
+  font-weight: 300;
+}
+.main_category{
+  font-size: 1.2em;
+  font-weight: 700;
+  list-style-type: none;
 }
 .ul{
   height: 80%;
