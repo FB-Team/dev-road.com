@@ -1,5 +1,5 @@
 import { BackEnd } from './BackEnd/BackEnd';
-import FullStack  from './FullStack/FullStack';
+import { FullStack } from './FullStack/FullStack';
 import FrontEnd from './FrontEnd/FrontEnd';
 
 
