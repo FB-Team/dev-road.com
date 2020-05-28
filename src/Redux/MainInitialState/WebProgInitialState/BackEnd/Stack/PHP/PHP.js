@@ -9,11 +9,11 @@ import Internet from '../../../FrontEnd/Theory/Internet/Internet';
 import Security from '../CommonTools/Security/Security';
 
 
-const Java = {
-  name: 'Node JS',
+const PHP = {
+  name: 'PHP',
   links: [],
   children: [Internet, BasicFront, PHPLavarel, DB_Back, API, GitHub, Cashing, Security, Architectures],
-	conclusion: ''
+	conclusion: 'PHP - однозначно наиболее широко используемый яп в сервеной разработке, именно с помощью этого языка вы найдете наибольшее количество вакансий'
 }
 
-export default Java
+export default PHP
