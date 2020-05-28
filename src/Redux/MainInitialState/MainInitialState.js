@@ -1,7 +1,6 @@
 import { findComponent } from '../findComponent';
 import ApplicationProgInitialState from './ApplicationProgInitialState/ApplicationProgInitialState.js';
 import OtherProg from './OtherProgInitialState/OtherProg';
-import SystemProgInitialState from './SystemProgInitialState/SystemProgInitialState';
 import WebProgInitialState from './WebProgInitialState';
 
 
@@ -16,7 +15,7 @@ const Root = {
 	data: {
 		proftitle: 'Главная'
 	},
-	children: [ApplicationProgInitialState, SystemProgInitialState, WebProgInitialState, OtherProg]
+	children: [ApplicationProgInitialState, WebProgInitialState, OtherProg]
 }
 
 const addParents = root => {

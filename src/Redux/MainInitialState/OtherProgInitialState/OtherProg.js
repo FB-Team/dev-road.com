@@ -1,5 +1,6 @@
-import QAEngeneer from './QAEngeneer/QAEngeneer';
+import { Firmware } from './Firmware/Firmware';
 import Desktop from './Desktop/DesktopRedux';
+import QAEngeneer from './QAEngeneer/QAEngeneer';
 
 const OtherProg = {
     meta: {
@@ -11,6 +12,6 @@ const OtherProg = {
       proftitle: 'Остальное',
       profdesc: 'Профессии, которые не относятся прямо к программированию, либо не рекоммендуются для старта в IT'
     },
-    children: [QAEngeneer, Desktop]
+    children: [QAEngeneer, Desktop, Firmware]
 }
 export default OtherProg

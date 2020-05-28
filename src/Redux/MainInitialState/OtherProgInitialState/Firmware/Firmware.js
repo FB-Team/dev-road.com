@@ -1,13 +1,13 @@
-import Cnet from '../../OtherProgInitialState/Desktop/Stack/CNET/CNET';
+import Cnet from '../Desktop/Stack/CNET/CNET';
 
 export const Firmware = {
     meta: {
     hasChildren: false,
-    path: '/system-prog/firmware',
+    path: '/other/firmware',
     id: 'firmware',
   },
   data:{
-    profdesc: 'Единственная специальность для старта, достойная внимания. Подходит для тех, кто интересуется железом. Возможны работы с паяльником.',
+    profdesc: 'Подходит для тех, кто интересуется железом. Возможны работы с паяльником.',
     proftitle: 'Встроенное программное обеспечение',
   },
   children: []
@@ -23,7 +23,7 @@ Firmware.data.expanded = {
 		cons: ["Сложность изучения", "Сложно найти работу", "Малый спрос"]
 	},
 	profsAlike: {
-		ids: ['backEnd'],
+		ids: [''],
 		result: [{
 			title: "",
 			imgPath: "",
