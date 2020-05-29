@@ -1,12 +1,29 @@
 body {
+  position: relative;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
+  background-color: var(white, white);
+  color: black;
+  #background-image: url('https://www.app-invest.com.ua/wp-content/uploads/2018/02/post_it_razvitie_kompanii.png');
 
+}
+body:after{
+/*  content: "";
+  background: url('https://pavelvoloshin.com/wp-content/uploads/2017/11/4z91F4AXfXo-2.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.3;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;*/
+}
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;

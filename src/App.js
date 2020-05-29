@@ -10,7 +10,7 @@ class  App extends React.Component {
     return (
     <div className="App">
       <Header />
-      <Sidebar />
+      {/*<Sidebar />*/}
       <Content />
       <Footer />
     </div>

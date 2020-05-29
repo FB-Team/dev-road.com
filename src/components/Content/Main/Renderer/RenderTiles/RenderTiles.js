@@ -12,7 +12,7 @@ let NavTiles = props.component.children
                      id={child.meta.id}>
                   <NavTile to={child.meta.path}
                            proftitle={child.data.proftitle}
-                           profdesc={child.data.profdesc}/>
+                           profdesc={child.data.profdesc} profimg={child.data.imgPath}/>
                 </div>
 )
   return (

@@ -10,9 +10,9 @@
   margin-top: 5px;
   height: 60px;
   text-decoration: none;
-  color: black;
+  color: var(white, black);
   padding-left: 20%;
-  background-color: white;
+  background-color: inherit;
   text-align: left;
   border: none;
 }
@@ -20,5 +20,5 @@
   outline: none;
 }
 .sidelink:hover{
-  background-color: #ffe6f9;
+  background-color: var(--neutral-color);
 }

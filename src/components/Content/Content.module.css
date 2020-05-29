@@ -1,6 +1,18 @@
 #Content{
+  position: relative;
   display: inline;
   grid-area: c;
-  margin-right: 20px;
-  margin-left: 20px;
+  margin: 0 8% 100px;
+
+}
+#Content:after{
+  /*background-color: white;
+  content: "";
+  opacity: 0.9;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;*/
+
 }

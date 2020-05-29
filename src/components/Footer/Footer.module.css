@@ -3,25 +3,30 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
-  background: lightgray;
+  background: var(--main-color-2);
+  color: white;
 }
 
 .rel-sites {
   width: min(600px, 60%);
   padding: 10px 0;
+  color: white;
 }
 
 .rel-sites-title {
   text-align: center;
   font-size: 1.15rem;
+  color: white;
 }
 
 .rel-sites-list {
   display: flex;
   justify-content: space-around;
   margin-top: 5px;
+  color: white;
 }
 
 .rel-sites-list a {
   text-decoration: none;
+  color: white;
 }
