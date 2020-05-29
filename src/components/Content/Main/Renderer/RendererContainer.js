@@ -5,9 +5,10 @@ import ExpandedRenderer from    './ExpandedRenderer/ExpandedRenderer'
 import RenderTiles from         './RenderTiles/RenderTiles'
 
 const RendererContainer = (props) => {
+  const {pathname, jump} = props;
   useEffect(() => {
-      props.jump(props.pathname)
-  }, [props.pathname]);
+    jump(pathname)
+  }, [pathname, jump]);
   let ResultingComponent = props.toRender.children.length > 0
     ? RenderTiles
     : ExpandedRenderer
