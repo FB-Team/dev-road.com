@@ -1,9 +1,10 @@
 .Tile{
-  border:3px solid var(--main-helper-color);
+  border-top: none;
   border-radius: 5px;
   padding: 0px;
   height: 100%;
   width: 400px;
+  margin: 0px;
 }
 .proftitle {
   text-align: center;
@@ -11,11 +12,10 @@
   font-weight: 500;
   margin: 0px;
   height: 70px;
-  color: black;
-  #background-color: var(--main-helper-color);
+  color: white;
+  background-color: var(--main-color-2);
 }
 .profimg{
-  width: 400px;
   height: 300px;
 }
 .profimg img {
@@ -25,5 +25,7 @@
 }
 
 .profdesc {
-
+  background-color: var(--main-color-2);
+  color: white;
+  height: 100px;
 }

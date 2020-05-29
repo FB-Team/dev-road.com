@@ -22,8 +22,9 @@
 .questionWithAnswer summary {
   position: relative;
   width: 500px;
-  background-color: gray;
+  background-color: var(--main-color-2);
   border: 0.1px solid lightgray;
+  color: white;
 }
 
 .questionWithAnswer div {
@@ -42,6 +43,7 @@
 
 .questionWithAnswer div {
   background-color: #35b34f;
+  color: white;
 }
 
 .questionWithAnswerContainer {

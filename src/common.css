@@ -1,15 +1,17 @@
 :root{
   --main-color: #2aabe4;
+  --main-color-3: #165c8d;
   --contrasting-color: #ffcd24;
   --main-helper-color: #9dc8e4;
   --neutral-color: #666bge;
+  --footer-color: #1d6ddb;
   --main-color-2: #33393d;
   --old-color: #F4A8E8;
   --custom-green: #46c35f;
 }
 *{
+  padding: 0px;
   box-sizing: border-box;
-  padding: 0;
 }
 
 /*a {
@@ -22,5 +24,5 @@ a:hover{
 */
 .horizontal-flex{
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 }

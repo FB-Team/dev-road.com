@@ -1,7 +1,7 @@
 .Header{
   grid-area: h;
   display: flex;
-  background-color: var(--main-color);
+  background-color: var(--main-color-3);
   color: white;
   align-content: space-around;
   height: 100px;

@@ -12,6 +12,7 @@ const WebProgInitialState = {
   data:{
     profdesc: 'Написание сайтов и веб приложений.',
     proftitle: 'Сетевое (Веб) программирование',
+    imgPath: 'https://coddyschool.com/upload/iblock/795/web.png'
 
   },
   children: [FrontEnd, BackEnd, FullStack]

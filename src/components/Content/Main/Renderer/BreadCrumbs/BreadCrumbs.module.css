@@ -1,29 +1,32 @@
 :root{
-  --border-color: silver;
-  --border-color-hover:#F4A8E8;
+  --border-color: #1f8ed6;
+  --background-color:#1d6ddb;
 }
 .link{
   display: flex;
   text-decoration: none;
-  color: black;
+  color: white;
   margin-right: 5px;
   border: 2px solid var(--border-color);
+  background-color: var(--background-color);
   border-radius: 20px;
   padding-left: 4px;
+  margin: 15px;
 }
 .arrow{
   width: 15px;
-    height: 15px;
-    border-top: solid 1px var(--border-color);
-    border-right: solid 1px var(--border-color);
-    transform: rotate(45deg);
-    align-self: center;
-    margin-left: auto;
-    margin-right: 15px;
-    z-index: 2;
+  height: 15px;
+  border-top: solid 1px white;
+  border-right: solid 1px white;
+  transform: rotate(45deg);
+  align-self: center;
+  margin-left: auto;
+  margin-right: 15px;
+  z-index: 2;
 }
 .link:hover{
-  border: 2px solid var(--border-color-hover);
+  background-color: var(--main-color-2);
+
 }
 .BreadCrumbs{
   display: flex;
