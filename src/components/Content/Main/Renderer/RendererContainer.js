@@ -1,21 +1,24 @@
-import React, { useEffect } from   'react'
-import { findAllParents } from  './findAllParents'
-import BreadCrumbs from         './BreadCrumbs/BreadCrumbs'
-import ExpandedRenderer from    './ExpandedRenderer/ExpandedRenderer'
-import RenderTiles from         './RenderTiles/RenderTiles'
+import React, { useEffect } from 'react'
+import { useLocation } from 'react-router-dom'
 
-const RendererContainer = (props) => {
-  const {pathname, jump} = props;
+import { findAllParents } from './findAllParents'
+import BreadCrumbs from './BreadCrumbs/BreadCrumbs'
+import ExpandedRenderer from './ExpandedRenderer/ExpandedRenderer'
+import RenderTiles from './RenderTiles/RenderTiles'
+
+
+const RendererContainer = ({jump, toRender}) => {
+  const {pathname} = useLocation()
   useEffect(() => {
     jump(pathname)
-  }, [pathname, jump]);
-  let ResultingComponent = props.toRender.children.length > 0
+  }, [jump, pathname]);
+  let ResultingComponent = toRender.children.length > 0
     ? RenderTiles
     : ExpandedRenderer
   return (
-    <div className={props.toRender.meta.id}>
-      <BreadCrumbs crumbs={findAllParents(props.toRender)} jump={props.jump} />
-      <ResultingComponent transfer={props.transfer} component={props.toRender}/>
+    <div className={toRender.meta.id}>
+      <BreadCrumbs crumbs={findAllParents(toRender)} jump={jump} />
+      <ResultingComponent component={toRender}/>
     </div>
   )
 }
