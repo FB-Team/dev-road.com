@@ -5,9 +5,9 @@
   height: 100%;
   width: 400px;
   margin: 0px;
-  animation-name: tileload;
+  /*animation-name: tileload;
   animation-duration: 1s;
-  animation-timing-function: ease-out;
+  animation-timing-function: ease-out;*/
 }
 @keyframes  tileload {
   0%{
