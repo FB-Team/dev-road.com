@@ -7,7 +7,7 @@ const parsedDelay = props.delay + 's'
   const tileload = keyframes `
   from{
     opacity: 0;
-    left: -50px;
+    left: -30px;
   }
   to{
     opacity: 1;
@@ -23,7 +23,7 @@ const parsedDelay = props.delay + 's'
     width: 400px;
     margin: 0px;
     opacity: 0;
-    animation: 0.5s ease-out ${parsedDelay} ${tileload} ;
+    animation: 0.3s ease-out ${parsedDelay} ${tileload} ;
     animation-fill-mode: forwards;
   `;
     return (
