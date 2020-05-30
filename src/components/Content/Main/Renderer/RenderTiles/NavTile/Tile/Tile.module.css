@@ -6,18 +6,14 @@
   width: 400px;
   margin: 0px;
 }
-.Tile:hover .proftitle{
-  background-color: var(--background-color)
-}
+.Tile:hover .proftitle,
 .Tile:hover .profdesc{
   background-color: var(--background-color)
 }
 .proftitle {
-  text-align: center;
-  font-size: 1.2rem;
-  font-weight: 500;
   margin: 0px;
   height: 70px;
+  font-size: 1.1rem;
   color: white;
   background-color: var(--main-color-2);
 }
@@ -35,4 +31,13 @@
   color: white;
   height: 100px;
   padding: 10px;
+}
+
+.profdesc,
+.proftitle {
+  text-align: center;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }

@@ -2,17 +2,19 @@
   position: relative;
   display: inline;
   grid-area: c;
-  margin: 0 8% 100px;
+  padding: 0 8% 100px;
 
 }
 #Content:after{
-  /*background-color: white;
+  background-image: url("https://i.pinimg.com/originals/72/b6/a2/72b6a2e749de0a8f87c536077c2e4b2e.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
   content: "";
   opacity: 0.9;
   top: 0;
   left: 0;
   bottom: 0;
   right: 0;
-  position: absolute;*/
-
+  position: absolute;
+  z-index: -1;
 }

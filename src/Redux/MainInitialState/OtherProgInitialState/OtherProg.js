@@ -13,6 +13,6 @@ const OtherProg = {
       profdesc: 'Профессии, которые не относятся прямо к программированию, либо не рекоммендуются для старта в IT',
       imgPath: 'https://ru.bitdegree.org/rukovodstvo/wp-content/uploads/2018/08/what-is-a-web-developer.jpg'
     },
-    children: [QAEngeneer, Desktop, Firmware]
+    children: [Firmware, QAEngeneer, Desktop]
 }
 export default OtherProg
