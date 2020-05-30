@@ -5,6 +5,26 @@
   height: 100%;
   width: 400px;
   margin: 0px;
+  animation-name: tileload;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+}
+@keyframes  tileload {
+  0%{
+    opacity: 0;
+  }
+  25%{
+    opacity: 0.35;
+  }
+  50%{
+    opacity: 0.7;
+  }
+  75%{
+    opacity: 0.85;
+  }
+  100%{
+    opacity: 1;
+  }
 }
 .Tile:hover .proftitle,
 .Tile:hover .profdesc{
@@ -13,7 +33,9 @@
 
 .Tile:hover {
   transform: scale(1.05);
+  transition: transform 0.5s;
 }
+
 .proftitle {
   margin: 0px;
   height: 70px;
