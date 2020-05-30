@@ -13,7 +13,7 @@ export const Firmware = {
     meta: {
     hasChildren: false,
     path: '/other/firmware',
-    id: 'firmware',
+    id: 'Firmware',
   },
   data:{
     profdesc: 'Предъявляет высокие требования к знанию электротехники, непросто освоить, но знания всегда остаются актуальными.',

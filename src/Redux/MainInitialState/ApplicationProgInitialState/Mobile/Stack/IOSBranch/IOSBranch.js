@@ -12,6 +12,6 @@ const IOSBranch = {
   name: "Разработка под IOS",
   links:[],
   children: [Swift, UIKit, CoreData, CocoaPods, Architectures,GitHub,Optional],
-  conclusion: ''
+  conclusion: 'Более высокий порог входа компенсируется более высоким уровнем зарплаты среди разработчиков, также нельзя не отметить высокое качество обучающих материалов, хотя некоторые из них будут платными.'
 }
 export default IOSBranch

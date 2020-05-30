@@ -1,6 +1,8 @@
+import { addLearningRateQuestion } from '../../HelperFunctions';
 import CocosBranch from './Stack/CocosBranch/CocosBranch';
 import UnityBranch from './Stack/UnityBranch/UnityBranch';
 import UnrealEngineBranch from './Stack/UnrealEngineBranch/UnrealEngineBranch';
+
 
 const Games = {
   meta: {
@@ -20,11 +22,11 @@ Games.data.expanded = {
                // FEED: Отличная идея!
 	tools: [UnityBranch, UnrealEngineBranch, CocosBranch],
 	prosAndCons: {
-		pros: ["Высокооплачиваемотсь", "Перспективы", "Работа в интересной области","Не слишком трудно обучиться"],
-		cons: ["Непонятно, куда геймдев пойдет в будущем", "Высокая конкуренция", "Трудно устроиться в большую компанию (новичку)"]
+		pros: ["Высокая оплата труда", "Перспективы", "Невысокий порог входа"],
+		cons: ["Высокая конкуренция", "Трудно устроиться в большую компанию (новичку)"]
 	},
 	profsAlike: {
-		ids: ['backEnd'],
+		ids: ['BackEnd', 'Mobile'],
 		result: [{
 			title: "",
 			imgPath: "",
@@ -34,13 +36,7 @@ Games.data.expanded = {
 	conclusion: '',
 	popularQuest: [{
 		name: 'Какая средняя зарплата специалиста?',
-		target: '~700$ для начинающего, ~2000$ и больше для middle разработчика'
-	}, {
-		name: 'Насколько популярна профессия?',
-		target: 'Профессия не слишком популярна.'
-	}, {
-		name: 'Перспективы desktop',
-		target: 'В последнее время данная область угасает, все больше и больше переходит в Web: веб-приложения, облачные сервисы и другое.'
-	}]
+		target: 'от 300$ до 1000$ для начинающего, ~1700$ и больше для middle разработчика'
+	}, addLearningRateQuestion('Зависит от выбранных параметров, от 6 месяцев 1 года и больше')]
 }
 export default Games

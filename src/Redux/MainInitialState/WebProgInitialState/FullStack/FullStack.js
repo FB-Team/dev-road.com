@@ -4,7 +4,7 @@ const FullStack = {
     meta: {
     hasChildren: false,
     path: '/web-prog/fullstack',
-    id: 'fullStack',
+    id: 'FullStack',
   },
   data:{
     profdesc: `"Человек-оркестр", знающий как fron-end, так и back-end. Умеет самостоятельно создавать веб-ресурсы с нуля.`,

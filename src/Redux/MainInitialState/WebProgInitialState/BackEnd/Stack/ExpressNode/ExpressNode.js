@@ -9,10 +9,10 @@ import Internet from '../../../FrontEnd/Theory/Internet/Internet';
 import Security from '../CommonTools/Security/Security';
 
 const ExpressNode = {
-  name: 'Node JS(Express)',
+  name: 'Node.js(Express)',
   links: [],
   children: [Internet, BasicFront, Express, DB_Back, API, GitHub, Caching, Security, Architectures],
-	conclusion: 'NodeJS является удобным фреймворком для работы с frontEnd, так как использует один и тот же язык.'
+	conclusion: 'Node.js набирает немалую популярность в back-end, также он является удобной платформой для работы с front-end, так как использует один и тот же язык.'
 }
 
 export default ExpressNode

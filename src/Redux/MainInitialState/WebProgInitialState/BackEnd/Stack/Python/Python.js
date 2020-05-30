@@ -13,7 +13,7 @@ const Python = {
   name: 'Python(Django)',
   links: [],
   children: [Internet, BasicFront, PythonDjango, DB_Back, API, GitHub, Caching, Security, Architectures],
-	conclusion: 'Python является легким и доступным в изучении языком и является неплохим инструментом для backend разработки'
+	conclusion: 'Python является легким и доступным в изучении языком и является неплохим инструментом для back-end разработки'
 }
 
 export default Python

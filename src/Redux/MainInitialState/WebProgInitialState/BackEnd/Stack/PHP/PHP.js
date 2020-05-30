@@ -13,7 +13,7 @@ const PHP = {
   name: 'PHP(Lavarel)',
   links: [],
   children: [Internet, BasicFront, PHPLavarel, DB_Back, API, GitHub, Caching, Security, Architectures],
-	conclusion: 'PHP - однозначно наиболее широко используемый яп в сервеной разработке, именно с помощью этого языка вы найдете наибольшее количество вакансий'
+	conclusion: 'PHP - однозначно наиболее широко используемый ЯП в серверной разработке, именно с помощью этого языка вы найдете наибольшее количество вакансий'
 }
 
 export default PHP

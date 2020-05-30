@@ -1,3 +1,4 @@
+import { addLearningRateQuestion } from '../../HelperFunctions';
 import CSharp from './Stack/CSharp/CSharp';
 import ExpressNode from './Stack/ExpressNode/ExpressNode'
 import PHP from './Stack/PHP/PHP';
@@ -5,11 +6,12 @@ import Python from './Stack/Python/Python';
 import Ruby from './Stack/Ruby/Ruby';
 
 
+
 export const BackEnd = {
     meta: {
     hasChildren: false,
     path: '/web-prog/back',
-    id: 'backEnd',
+    id: 'BackEnd',
   },
   data:{
     profdesc: 'Несколько сложнее для освоения, чем front-end, больший упор на математико-аналитические качества программиста, более высокая оплата труда.',
@@ -25,11 +27,11 @@ BackEnd.data.expanded = {
 	imgPath: '',
 	tools: [PHP, ExpressNode, Python, CSharp, Ruby], // Java сложно
 	prosAndCons: {
-		pros: ["Высокая зарплата", "Перспективная профессия", "Высокая востребованность"],
+		pros: ["Высокая зарплата", "Перспективы", "Высокая востребованность"],
 		cons: ["Сложность обучения", "Множество языков"]
 	},
 	profsAlike: {
-		ids: [],
+		ids: ['FullStack', 'Firmware', 'QAEngeneer'],
 		result: [{
 			title: "",
 			imgPath: "",
@@ -41,11 +43,6 @@ BackEnd.data.expanded = {
     {
 		name: 'Какая средняя зарплата специалиста?',
 		target: '~750$ для начинающего, ~2000$ и больше для middle разработчика'
-	}, {
-		name: 'Насколько популярна профессия?',
-		target: 'Профессия популярна и востребована. Хороших специалистов найти сложно.'
-	}, {
-		name: 'Перспективы',
-		target: 'Есть возможность выучить front end и стать full stack разработчиком.'
-	}]
+	},addLearningRateQuestion('')
+]
 }
