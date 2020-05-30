@@ -5,25 +5,13 @@ import s from './Tile.module.css'
 const Tile = (props)=>{
 const parsedDelay = props.delay + 's'
   const tileload = keyframes `
-  0%{
+  from{
     opacity: 0;
-    top: -50px;
+    left: -50px;
   }
-  25%{
-    opacity: 0.25;
-    top: -35px;
-  }
-  50%{
-    opacity: 0.5;
-    top: -20px;
-  }
-  75%{
-    opacity: 0.75;
-    top: -15px;
-  }
-  100%{
+  to{
     opacity: 1;
-    top: 0px;
+    left: 0px;
   }
   `;
   const Div = styled.div`
@@ -35,7 +23,7 @@ const parsedDelay = props.delay + 's'
     width: 400px;
     margin: 0px;
     opacity: 0;
-    animation: 0.5s linear ${parsedDelay} ${tileload} ;
+    animation: 0.5s ease-out ${parsedDelay} ${tileload} ;
     animation-fill-mode: forwards;
   `;
     return (

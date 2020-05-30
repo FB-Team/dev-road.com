@@ -8,7 +8,7 @@ let NavTiles = props.component.children.
 map((child, i) => <div key={child.meta.id}
                      className={s.NavTile}
                      id={child.meta.id}>
-                  <NavTile delay={delayIncrement += 0.2} to={child.meta.path}
+                  <NavTile delay={delayIncrement += 0.5} to={child.meta.path}
                            proftitle={child.data.proftitle}
                            profdesc={child.data.profdesc} profimg={child.data.imgPath}/>
                 </div>
