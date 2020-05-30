@@ -23,7 +23,7 @@ const parsedDelay = props.delay + 's'
     width: 400px;
     margin: 0px;
     opacity: 0;
-    animation: 0.3s ease-out ${parsedDelay} ${tileload} ;
+    animation: 1s cubic-bezier(0.42, 0.0, 0.58, 1.0) ${parsedDelay} ${tileload} ;
     animation-fill-mode: forwards;
   `;
     return (
