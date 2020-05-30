@@ -30,3 +30,7 @@
   text-decoration: none;
   color: white;
 }
+
+.rel-sites-list a:hover {
+  font-weight: bolder;
+}

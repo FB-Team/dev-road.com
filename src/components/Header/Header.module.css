@@ -15,6 +15,20 @@
   margin-left: 20%;
   font-family: 'Fredoka One', cursive;
 }
+
+.title a {
+  color: white;
+  text-decoration: none;
+  text-shadow: -2px 3px 4px black;
+}
+
+.title a:hover {
+  text-shadow: none;
+}
+
+.title a:hover h1 {
+  transform: scale(1.1);
+}
 /* .navlink{
   text-decoration:none;
   margin-left: 15px;

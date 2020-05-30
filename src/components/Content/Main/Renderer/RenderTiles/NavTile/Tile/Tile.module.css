@@ -10,6 +10,10 @@
 .Tile:hover .profdesc{
   background-color: var(--background-color)
 }
+
+.Tile:hover {
+  transform: scale(1.05);
+}
 .proftitle {
   margin: 0px;
   height: 70px;
