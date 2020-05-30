@@ -6,3 +6,6 @@
   text-indent: 2em;
   /*background: */
 }
+#Introduction p{
+    font-weight: normal;
+}
