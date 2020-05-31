@@ -15,10 +15,6 @@ const Security = {
       target: 'https://mnorin.com/tls-ssl-neobhodimy-j-minimum-znanij.html'
     },
     {
-      name: 'SSL TLS',
-      target: 'https://mnorin.com/tls-ssl-neobhodimy-j-minimum-znanij.html'
-    },
-    {
       name: 'Owasp top 10 security risks',
       target: 'https://sucuri.net/guides/owasp-top-10-security-vulnerabilities-2020/'
     }

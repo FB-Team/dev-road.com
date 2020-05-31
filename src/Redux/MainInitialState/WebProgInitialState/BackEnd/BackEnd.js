@@ -41,6 +41,6 @@ BackEnd.data.expanded = {
     {
 		name: 'Какая средняя зарплата специалиста?',
 		target: '~750$ для начинающего, ~2000$ и больше для middle разработчика'
-	},addLearningRateQuestion('')
+	},addLearningRateQuestion('От 7 месяцев обучения')
 ]
 }

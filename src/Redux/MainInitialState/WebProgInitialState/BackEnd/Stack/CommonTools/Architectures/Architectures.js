@@ -12,14 +12,6 @@ const Architectures = {
     {
       name: 'Бессерверная архитектура',
       target: 'https://docs.microsoft.com/ru-ru/dotnet/architecture/serverless/'
-    },
-    {
-      name: 'SSL TLS',
-      target: 'https://mnorin.com/tls-ssl-neobhodimy-j-minimum-znanij.html'
-    },
-    {
-      name: 'Owasp top 10 security risks',
-      target: 'https://sucuri.net/guides/owasp-top-10-security-vulnerabilities-2020/'
     }
   ],
   children: []
