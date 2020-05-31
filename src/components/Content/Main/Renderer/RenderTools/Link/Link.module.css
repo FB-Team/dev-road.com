@@ -1,18 +1,30 @@
-.linksAndContent{
-  display:flex;
-}
 .linksWrapper{
-  display: flex;
+  position: absolute;
+  display: none;
+  flex-direction: column;
+  background-color: var(--main-color);;
+  border-radius:20px;
+  padding: 8px;
+  opacity: 0;
+  animation: bubble 1s 1 ease-out;
+  animation-delay: 0.5s;
+  animation-fill-mode: forwards;
+}
+.linksWrapper:after{
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: 20px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: var(--main-color) transparent transparent transparent;
+  transform: rotate(180deg);
 }
 .linkChild{
   font-size: 0.8em;
   text-decoration: none;
-  background-color: #35b34f;
+  margin: 5px 0px 5px 0px;
   color: white;
-  border-radius: 5px;
-  margin-left: 10px;
-  padding: 2px;
-  animation: bubble 1s 1 ease-in-out;
 }
 .li{
   margin-left: 15px;
@@ -36,16 +48,7 @@
 }
 @keyframes  bubble {
 from {
-  opacity: 0.15;
-}
-25%{
-  opacity: 0.35;
-}
-50%{
-  opacity: 0.6;
-}
-75%{
-  opacity: 0.85;
+  opacity: 0;
 }
 to{
   opacity: 1;
