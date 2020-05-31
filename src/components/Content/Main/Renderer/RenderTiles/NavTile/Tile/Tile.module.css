@@ -13,8 +13,13 @@
   background-color: var(--background-color)
 }
 
-.Tile:hover {
+/* .Tile:hover {
   transform: scale(1.05);
+  transition: transform 0.5s;
+} */
+
+.Tile:hover .profimg img {
+  transform: scale(1.15);
   transition: transform 0.5s;
 }
 
@@ -27,11 +32,13 @@
 }
 .profimg{
   height: 300px;
+  overflow: hidden;
 }
 .profimg img {
  width: 100%;
  height: 100%;
  object-fit: cover;
+ transition: transform 0.5s;
 }
 
 .profdesc {

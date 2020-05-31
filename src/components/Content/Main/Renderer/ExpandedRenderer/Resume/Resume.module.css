@@ -22,9 +22,18 @@
 .questionWithAnswer summary {
   position: relative;
   width: 500px;
+  cursor: pointer;
   background-color: var(--main-color-2);
   border: 0.1px solid lightgray;
   color: white;
+}
+
+.questionWithAnswer[open] summary {
+  background-color: var(--background-color);
+}
+
+.questionWithAnswer[open] summary:focus {
+  outline: none;
 }
 
 .questionWithAnswer div {
@@ -33,8 +42,24 @@
   right: 0;
   top: 0;
 }
-
+/* clear marker except Mozilla */
 .questionWithAnswer summary::-webkit-details-marker {
+  display: none;
+}
+/* Mozilla clear marker */
+.questionWithAnswer summary{
+  list-style: none;
+}
+
+.questionWithAnswer summary::after {
+  position: absolute;
+  content: ">";
+  right: 5px;
+}
+
+.questionWithAnswer[open] summary::after {
+  transform: scale(1.1);
+  font-weight: bolder;
 }
 
 .questionWithAnswer div{
