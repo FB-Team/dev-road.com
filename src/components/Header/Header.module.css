@@ -27,7 +27,12 @@
 }
 
 .title a:hover h1 {
-  transform: scale(1.1);
+  transition: 1s;
+  transform: scale(1.08);
+}
+
+.title a h1 {
+  transition: 1s;
 }
 /* .navlink{
   text-decoration:none;

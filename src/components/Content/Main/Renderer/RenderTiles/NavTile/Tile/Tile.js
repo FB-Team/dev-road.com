@@ -15,19 +15,14 @@ const parsedDelay = props.delay + 's'
   }
   `;
   const Div = styled.div`
-  position: relative;
-    border-top: none;
-    border-radius: 5px;
-    padding: 0px;
-    height: 100%;
-    width: 400px;
-    margin: 0px;
+    position: relative;
     opacity: 0;
     animation: 1s cubic-bezier(0.42, 0.0, 0.58, 1.0) ${parsedDelay} ${tileload} ;
     animation-fill-mode: forwards;
+    transition: transform 0.5s;
   `;
     return (
-      <Div>
+      <Div className={s.Tile}>
         <div className={s.proftitle}>
           {props.proftitle}
         </div>
