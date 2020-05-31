@@ -5,7 +5,7 @@ import WebProgInitialState from './WebProgInitialState/WebProgInitialState';
 
 
 
-//КИРИЛЛ ДОБАВИЛ БЕКСЛЭШ В СВОЙСТВО PATH, ДОБАВИЛ СВОЙСТВО ID В META
+
 const Root = {
 	meta: {
 		hasChildren: true,
@@ -16,7 +16,7 @@ const Root = {
 	data: {
 		proftitle: 'Главная'
 	},
-	children: [ApplicationProgInitialState, WebProgInitialState, OtherProg]
+	children: [WebProgInitialState] //ApplicationProgInitialState, , OtherProg
 }
 
 const addParents = root => {
@@ -34,8 +34,22 @@ const addParents = root => {
 	parent.children.forEach(child => {
 		addParents2(child, parent)
 	});
+}
 
-
+const addImagePath = root => {
+	const addImagePathHelper = (curObj) => {
+		curObj.data.imgPath =     `./img/${curObj.meta.id}.png`
+		// Работает относительно пути файла, в который вставляется посредством require... нельзя выйти с папки назад, только вперед
+		if (curObj.children.length > 0) {
+			curObj.children.forEach(child => {
+				addImagePathHelper(child)
+			})
+		}
+	}
+	let parent = root
+	parent.children.forEach(child => {
+		addImagePathHelper(child)
+	});
 }
 
 const setProfsAlike = parent => {
@@ -65,4 +79,5 @@ const setProfsAlike = parent => {
 
 addParents(Root);
 setProfsAlike(Root);
+addImagePath(Root);
 export default Root

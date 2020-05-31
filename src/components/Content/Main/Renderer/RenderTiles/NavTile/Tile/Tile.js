@@ -27,7 +27,7 @@ const parsedDelay = props.delay + 's'
           {props.proftitle}
         </div>
         <div className={s.profimg}>
-          <img src={props.profimg} alt=""/>
+          <img src={require(`${props.profimg}`)} alt=""/>
         </div>
         <div className={s.profdesc}>{props.profdesc}</div>
       </Div>
