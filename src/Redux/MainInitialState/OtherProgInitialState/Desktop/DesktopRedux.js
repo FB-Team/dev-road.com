@@ -28,7 +28,7 @@ Desktop.data.expanded = {
 		cons: ["Со временем может исчезнуть", "Тяжелее тестировать на разных операционных системах", "Отличительный синтаксис(C++)"]
 	},
 	profsAlike: {
-		ids: ['backEnd'],
+		ids: ['BackEnd'],
 		result: [{
 			title: "",
 			imgPath: "",

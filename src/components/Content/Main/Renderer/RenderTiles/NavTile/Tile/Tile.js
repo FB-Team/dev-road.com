@@ -3,6 +3,12 @@ import styled, { keyframes } from 'styled-components'
 import s from './Tile.module.css'
 
 const Tile = (props)=>{
+  let imgSrc = ""
+  try {
+    imgSrc = require(`${props.profimg}`);
+  } catch (e) {
+    console.log(e.message);
+  }
 const parsedDelay = props.delay + 's'
   const tileload = keyframes `
   from{
@@ -27,7 +33,7 @@ const parsedDelay = props.delay + 's'
           {props.proftitle}
         </div>
         <div className={s.profimg}>
-          <img src={require(`${props.profimg}`)} alt=""/>
+          <img src={imgSrc} alt=""/>
         </div>
         <div className={s.profdesc}>{props.profdesc}</div>
       </Div>

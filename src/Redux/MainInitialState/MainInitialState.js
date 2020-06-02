@@ -16,7 +16,7 @@ const Root = {
 	data: {
 		proftitle: 'Главная'
 	},
-	children: [WebProgInitialState] //ApplicationProgInitialState, , OtherProg
+	children: [ApplicationProgInitialState, WebProgInitialState, OtherProg]
 }
 
 const addParents = root => {

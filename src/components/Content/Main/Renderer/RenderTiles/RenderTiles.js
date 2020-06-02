@@ -4,8 +4,8 @@ import s from './RenderTiles.module.css'
 
 const RenderTiles = props => {
 let delayIncrement = -0.2;
-let NavTiles = props.component.children.
-map((child, i) => <div key={child.meta.id}
+let NavTiles = props.component.children
+  .map((child, i) => <div key={child.meta.id}
                      className={s.NavTile}
                      id={child.meta.id}>
                   <NavTile delay={delayIncrement += 0.3} to={child.meta.path}

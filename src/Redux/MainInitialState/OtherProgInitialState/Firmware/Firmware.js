@@ -32,7 +32,7 @@ Firmware.data.expanded = {
 		cons: ["Сложность изучения", "Сложно найти работу", "Малый спрос"]
 	},
 	profsAlike: {
-		ids: [''],
+		ids: ['FrontEnd'],
 		result: [{
 			title: "",
 			imgPath: "",
