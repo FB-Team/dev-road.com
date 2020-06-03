@@ -1,6 +1,5 @@
 import React from 'react'
 import Header from './components/Header/Header.js'
-import Sidebar from './components/Sidebar/Sidebar.js'
 import Footer from './components/Footer/Footer.js'
 import './common.css'
 import './App.css'
@@ -10,7 +9,6 @@ class  App extends React.Component {
     return (
     <div className="App">
       <Header />
-      {/*<Sidebar />*/}
       <Content />
       <Footer />
     </div>

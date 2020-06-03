@@ -16,7 +16,8 @@ const Root = {
 	data: {
 		proftitle: 'Главная'
 	},
-	children: [ApplicationProgInitialState, WebProgInitialState, OtherProg]
+	children: [ApplicationProgInitialState, WebProgInitialState, OtherProg],
+	pathesArray: []
 }
 
 const addParents = root => {
@@ -77,6 +78,23 @@ const setProfsAlike = parent => {
 	return
 }
 
+const setPathesArrayToRoot = root => {
+	const setPathesArrayToRootHelper = (curObj) => {
+		root.pathesArray.push(curObj.meta.path)
+		if (curObj.children.length > 0) {
+			curObj.children.forEach(child => {
+				setPathesArrayToRootHelper(child)
+			})
+		}
+	}
+	root.pathesArray.push(Root.meta.path)
+	let parent = root
+	parent.children.forEach(child => {
+		setPathesArrayToRootHelper(child)
+	});
+}
+
+setPathesArrayToRoot(Root);
 addImagePath(Root);
 addParents(Root);
 setProfsAlike(Root);

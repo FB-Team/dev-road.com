@@ -1,22 +1,21 @@
 import React from 'react'
-import {compose} from 'redux'
 import {connect} from 'react-redux'
 import {Route} from 'react-router-dom'
-import {loadPage, transfer, jump} from '../../../Redux/actions.js'
+import {jump} from '../../../Redux/actions.js'
 import RendererContainer from './Renderer/RendererContainer'
 
-const Main = (props) => {
+const Main = ({pathesArray, ...props}) => {
   return (
     <>
-      <Route exact path="/(application-prog.*|web-prog.*|other.*|)/">
+      <Route exact path={pathesArray}>
         <RendererContainer {...props}/>
       </Route>
-
     </>
 )}
 function mapStateToProps(state){
   return{
-    toRender: state.toRender
+    toRender: state.toRender,
+    pathesArray: state.Root.pathesArray
   }
 }
-export default compose(connect(mapStateToProps, { loadPage, transfer, jump }))(Main)
+export default connect(mapStateToProps, { jump })(Main)

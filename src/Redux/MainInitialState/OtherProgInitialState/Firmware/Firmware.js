@@ -49,5 +49,5 @@ Firmware.data.expanded = {
 	}, {
 		name: 'Перспективы',
 		target: 'Профессия всегда будет актуальна'
-	},addLearningRateQuestion('1 + 3 + 1 + 1 + 1 + 0.5 + 3')]
+	},addLearningRateQuestion('От 1 года и более')]
 }

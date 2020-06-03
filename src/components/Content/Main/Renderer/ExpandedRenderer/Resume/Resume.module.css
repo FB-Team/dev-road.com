@@ -8,10 +8,14 @@
 
 .conclusion .title {
   text-align: center;
+  font-size: 1.4rem;
+  font-weight: 500;
 }
 
 .PopularQuest .title {
   font-style: italic;
+  font-size: 1.1rem;
+  margin-bottom: 5px;
 }
 
 .questionWithAnswer {

@@ -21,9 +21,3 @@ ReactDOM.render(
 // unregister() to register() below. Note this comes with some pitfalls.
 // Learn more about service workers: https://bit.ly/CRA-PWA
 serviceWorker.unregister()
-/*
-TODO: 1) JAVA +
-TODO: 2) ИСПРАВИТЬ СПИСКИ
-TODO: 3) ПОФИКСИТЬ РЕАКТ БАГ
-TODO: 4) НАЧАТЬ ИГРЫ
-*/

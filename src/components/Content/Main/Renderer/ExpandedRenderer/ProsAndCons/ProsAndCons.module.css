@@ -1,5 +1,12 @@
+.ProsAndCons {
+  margin: 15px 0;
+  padding: 5px;
+  border-radius: 10px;
+}
+
 .title {
   text-align: center;
+  font-size: 1.2rem;
 }
 
 .container {
@@ -8,10 +15,19 @@
   display: grid;
   justify-items: center;
   grid-template-columns: 1fr 1fr;
+  font-style: italic;
 }
 
 .container ul {
   list-style: none;
+}
+
+.pros {
+  color: #3d9e3d;
+}
+
+.cons {
+  color: #cd5d5d;
 }
 
 .container ul.pros li:before {

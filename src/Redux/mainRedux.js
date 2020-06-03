@@ -9,6 +9,7 @@ Root - ГЛАВНАЯ КОМПОНЕНТА, ЧТО БЫ БЫЛА ВОЗМОЖН�
 let initialState = {}
 initialState.toRender = Root
 initialState.Root = Root
+
 const store = createStore(rootReducer)
 /* КИРИЛЛ
 ПРИ ЗАГРУЗКЕ СТРАНИЦИУ ВОЗВРАЩАЕМ КОРЕННУЮ КОМПОНЕНТУ
@@ -21,8 +22,6 @@ const store = createStore(rootReducer)
 function rootReducer(state = initialState, action) {
 	let newToRender
 	switch (action.type) {
-		case actions.LOAD_PAGE:
-			return state
 
 		case actions.JUMP:
 			newToRender = findComponent(state.Root, action.path)
@@ -41,7 +40,6 @@ function rootReducer(state = initialState, action) {
 				...state,
 				toRender: newToRender
 			}
-		case actions.LOAD_TOOLS:
 
 		default:
 			return state
