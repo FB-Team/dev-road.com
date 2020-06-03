@@ -29,8 +29,10 @@
 .rel-sites-list a {
   text-decoration: none;
   color: white;
+  transition: 1s ease-out;
 }
 
 .rel-sites-list a:hover {
-  font-weight: bolder;
+  transform: scale(1.2);
+  transition: 1s ease-out;
 }
