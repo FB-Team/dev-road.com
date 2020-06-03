@@ -62,7 +62,7 @@ const setProfsAlike = parent => {
 				} else {
 					parent.data.expanded.profsAlike.result[index] = {
 						title: tempComp.data.proftitle,
-						imgPath: "",
+						imgPath: tempComp.data.imgPath,
 						urlPath: tempComp.meta.path
 					}
 				}
@@ -77,7 +77,7 @@ const setProfsAlike = parent => {
 	return
 }
 
+addImagePath(Root);
 addParents(Root);
 setProfsAlike(Root);
-addImagePath(Root);
 export default Root

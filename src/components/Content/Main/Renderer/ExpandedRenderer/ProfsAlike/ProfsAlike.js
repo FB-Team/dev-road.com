@@ -1,7 +1,8 @@
 import React from 'react';
 
-import Navtile from '../../RenderTiles/NavTile/NavTile';
+import Navtile from 'components/Common/Tile/NavTile';
 import s from './ProfsAlike.module.css';
+
 
 
 const ProfsAlike = (props) => {
@@ -16,7 +17,7 @@ const ProfsAlike = (props) => {
           props.profsAlike.map( prof => {
             return  (
               <div key={prof.urlPath} className={s.NavTile} id={prof.urlPath}>
-                <Navtile to={prof.urlPath} profdesc="" proftitle={prof.title} />
+                <Navtile to={prof.urlPath} profimg={prof.imgPath} proftitle={prof.title} />
               </div>)
           })
         }

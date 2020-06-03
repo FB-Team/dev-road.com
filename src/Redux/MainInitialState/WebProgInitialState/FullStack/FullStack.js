@@ -9,7 +9,7 @@ const FullStack = {
     id: 'FullStack',
   },
   data:{
-    profdesc: `"Человек-оркестр", знающий как fron-end, так и back-end. Умеет самостоятельно создавать веб-ресурсы с нуля.`,
+    profdesc: `"Человек-оркестр", знающий как front-end, так и back-end. Умеет самостоятельно создавать веб-ресурсы с нуля.`,
     proftitle: 'Fullstack',
 
   },

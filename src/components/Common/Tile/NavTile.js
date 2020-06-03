@@ -1,6 +1,6 @@
 import React from 'react'
 import s from './NavTile.module.css'
-import Tile from './Tile/Tile.js'
+import Tile from './Tile.js'
 import { Link } from 'react-router-dom'
 class NavTile extends React.Component {
   render () {

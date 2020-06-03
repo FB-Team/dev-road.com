@@ -1,6 +1,8 @@
 import React from 'react'
-import NavTile from './NavTile/NavTile';
+
+import NavTile from 'components/Common/Tile/NavTile';
 import s from './RenderTiles.module.css'
+
 
 const RenderTiles = props => {
 let delayIncrement = -0.2;
