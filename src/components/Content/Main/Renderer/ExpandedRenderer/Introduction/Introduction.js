@@ -4,7 +4,6 @@ import s from './Introduction.module.css';
 import ReactHtmlParser from 'react-html-parser';
 
  const Introduction = (props) => {
-   debugger;
    let imgSrc = ""
    try {
      imgSrc = require(`${props.imgPath}`);
