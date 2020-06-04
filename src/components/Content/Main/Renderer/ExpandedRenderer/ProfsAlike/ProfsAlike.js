@@ -26,6 +26,6 @@ const ProfsAlike = (props) => {
     </div>
   )
 };
-//TODO: Change tiles styling
+//TODO: Change tiles styling +
 
 export default ProfsAlike;

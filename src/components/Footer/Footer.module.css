@@ -7,32 +7,62 @@
   color: white;
 }
 
-.rel-sites {
+.relSites {
   width: min(600px, 60%);
   padding: 10px 0;
   color: white;
 }
 
-.rel-sites-title {
+.relSites_title,
+.contacts_title {
   text-align: center;
   font-size: 1.15rem;
   color: white;
 }
 
-.rel-sites-list {
+.relSites_list {
   display: flex;
   justify-content: space-around;
   margin-top: 5px;
   color: white;
 }
 
-.rel-sites-list a {
+.relSites_list a,
+.github a,
+.email a {
   text-decoration: none;
   color: white;
   transition: 1s ease-out;
 }
 
-.rel-sites-list a:hover {
+.relSites_list a:hover,
+.github a:hover,
+.email a:hover {
   transform: scale(1.2);
   transition: 1s ease-out;
+}
+
+.contactsWrapper {
+  margin-top: 5px;
+  width: 200px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.github a,
+.email a {
+  display: flex;
+  flex-direction: row;
+}
+
+.github a span,
+.email a span {
+  margin-left: 5px;
+}
+
+.github img,
+.email img {
+  height: 20px;
 }

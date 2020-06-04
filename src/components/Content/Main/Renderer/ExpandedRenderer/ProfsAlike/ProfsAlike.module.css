@@ -3,6 +3,10 @@
   justify-content: center;
 }
 
+.NavTile:not(:last-child) {
+  margin-right: 10px;
+}
+
 .NavTile div{
   font-size: 0.8rem;
 }
