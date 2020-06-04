@@ -50,9 +50,9 @@
   left: 520px;
   right: 0;
   top: 0;
-  bottom: 0;
   display: flex;
   align-items: center;
+  min-height: 100%;
 }
 /* clear marker except Mozilla */
 .questionWithAnswer summary::-webkit-details-marker {
