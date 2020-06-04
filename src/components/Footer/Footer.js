@@ -19,7 +19,7 @@ class Footer extends React.Component{
           <div className={s.contacts_title}>Контакты</div>
           <div className={s.contactsWrapper}>
             <div className={s.github}>
-              <a href={GITHUB_PAGE} rel="noopener noreferrer">
+              <a target="_blank" href={GITHUB_PAGE} rel="noopener noreferrer">
                 <img src={GitHubLogo} alt="GitHub logo"/><span>GitHub</span>
               </a>
             </div>
@@ -32,7 +32,7 @@ class Footer extends React.Component{
         </div>
         <div className={s.relSites}>
           <div className={s.relSites_title}>
-            Вас так же может заинтересовать:
+            Веб-ресурсы для самообучения:
           </div>
           <div className={s.relSites_list}>
             <a target="_blank" rel="noopener noreferrer" href={FREECODECAMP_LINK}>FreeCodeCamp</a>
