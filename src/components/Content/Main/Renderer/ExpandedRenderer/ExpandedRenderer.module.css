@@ -1,0 +1,8 @@
+.initialTooltipStyle{
+  background-color: white;
+  color: inherit;
+}
+.initialTooltipStyle:focus{
+  background-color: white;
+  color: inherit;
+}

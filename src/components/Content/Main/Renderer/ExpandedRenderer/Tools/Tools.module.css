@@ -1,6 +1,22 @@
 #Tools{
   height: auto;
+  font-size: 1.05rem;
 }
 .list{
 margin-left: 40px;
+}
+.button {
+	background-color: var(--footer-color);
+  border-radius: 5px;
+  color: white;
+  border: none;
+  margin-left: 2px;
+  margin-right: 2px;
+  padding: 4px;
+}
+.button:hover{
+  background-color: var(--main-color-2);
+}
+.button:focus{
+  background-color: var(--main-color-2);
 }

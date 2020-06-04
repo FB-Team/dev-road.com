@@ -1,10 +1,12 @@
 .li{
   margin-left: 25px;
+  padding: 2px;
   list-style-type: " - ";
   font-weight: 300;
   width: fit-content;
 }
 .main_li{
+  padding: 2px;
   margin-left: 25px;
   list-style-type: disc;
 }

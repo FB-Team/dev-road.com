@@ -1,9 +1,8 @@
 import React from 'react';
 import { useState } from 'react'
 import s from './Link.module.css';
-
-
-// const mullet = 'mullet'
+const LINKS = 'LINKS'
+const TOOLTIP = 'TOOLTIP'
 const  Link = (props) =>{
   const [tooltipVisibility, setTooltipVisibility] = useState(false)
   let links = null
@@ -15,7 +14,10 @@ const  Link = (props) =>{
     li_style = props.extraClass
   }
   return (
-    <li className={li_style}><span className={s.contentWrapper}>{props.content}</span><div className={s.linksWrapper}>{links}</div>{props.innerComponents}</li>
+    links ?
+    <li className={li_style}><button data-type={TOOLTIP} className={s.contentWrapper}>{props.content}</button><div data-type={LINKS} className={s.linksWrapper}>{links}</div>{props.innerComponents}</li>:
+    <li className={li_style}><button data-type={TOOLTIP} className={s.contentWrapperNohover}>{props.content}</button>{props.innerComponents}</li>
+
   )
 }
 export default Link

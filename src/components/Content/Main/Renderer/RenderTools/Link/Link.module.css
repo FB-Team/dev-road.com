@@ -20,8 +20,25 @@
   border-color: var(--main-color) transparent transparent transparent;
   transform: rotate(180deg);
 }
-.contentWrapper{
+.contentWrapper,
+.contentWrapperNohover{
   width: fit-content;
+  padding: 2px;
+  border: none;
+  background-color: inherit;
+  font-size: 1em;
+  outline: none;
+}
+.contentWrapper:hover,
+.contentWrapper:focus{
+  background-color: var(--main-color-2);
+  color: white;
+  border-radius: 5px;
+  cursor:alias;
+}
+
+.link:hover{
+  background-color: var(--main-color-2);
 }
 .linkChild{
   font-size: 0.8em;

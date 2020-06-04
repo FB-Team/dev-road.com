@@ -15,12 +15,11 @@ const FIRST_CHILD = 0
    )
   return (
 <div id={s.Tools}>
-<div className={s.buttonsWrapper}>{buttons}</div>
+{buttons.length >= 1 ? <div className={s.buttonsWrapper}>{buttons}</div> : <div></div>}
  <RenderTools tool={currentTool}/>
  <div className={s.conclusion}>{currentTool.conclusion}</div>
 </div>
   )
 }
-// TODO: Fix styling bug, find an app font size, change buttons& elements view 
-
+// TODO: Fix styling bug, find an app font size, change buttons& elements view , add cros
 export default Tools
