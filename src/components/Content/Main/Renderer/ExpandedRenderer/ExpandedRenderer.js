@@ -13,7 +13,7 @@ import prevS from '../RenderTools/Link/Link.module.css'
     const prevTooltip = currentTooltip
     if (currentTooltip){
       currentTooltip.style.display = 'none'
-      currentTooltip.parentNode.firstChild.classList.add(s.initialTooltipStyle)
+      currentTooltip.parentNode.firstChild.classList.remove(s.active)
       setTooltip(null)
     }
     if (event.target.dataset.type === 'TOOLTIP'){
@@ -22,8 +22,7 @@ import prevS from '../RenderTools/Link/Link.module.css'
         if (targetTooltip != prevTooltip){
           targetTooltip.style.display = 'flex'
           targetTooltip.style.left = event.clientX -20 + 'px'
-          event.target.classList.remove(s.initialTooltipStyle)
-          event.target.classList.add(prevS.contentWrapper)
+          event.target.classList.add(s.active)
           setTooltip(targetTooltip)
         }
      }

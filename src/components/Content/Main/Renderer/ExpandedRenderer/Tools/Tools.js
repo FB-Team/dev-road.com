@@ -15,7 +15,7 @@ const FIRST_CHILD = 0
    )
   return (
 <div id={s.Tools}>
-{buttons.length >= 1 ? <div className={s.buttonsWrapper}>{buttons}</div> : <div></div>}
+{buttons.length > 1 ? <div className={s.buttonsWrapper}>{buttons}</div> : <div></div>}
  <RenderTools tool={currentTool}/>
  <div className={s.conclusion}>{currentTool.conclusion}</div>
 </div>

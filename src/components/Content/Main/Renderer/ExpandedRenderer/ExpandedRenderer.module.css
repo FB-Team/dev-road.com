@@ -2,7 +2,8 @@
   background-color: white;
   color: inherit;
 }
-.initialTooltipStyle:focus{
-  background-color: white;
-  color: inherit;
+.active{
+  background-color: var(--main-color-2);
+  color: white;
+  border-radius: 5px;
 }

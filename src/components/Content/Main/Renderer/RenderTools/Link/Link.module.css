@@ -29,8 +29,7 @@
   font-size: 1em;
   outline: none;
 }
-.contentWrapper:hover,
-.contentWrapper:focus{
+.contentWrapper:hover{
   background-color: var(--main-color-2);
   color: white;
   border-radius: 5px;
