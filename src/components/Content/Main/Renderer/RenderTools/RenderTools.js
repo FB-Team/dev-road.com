@@ -1,7 +1,7 @@
 import React from   'react'
 import { useState, useEffect } from 'react'
 import createTools from './createTools'
-
+import s from './RenderTools.module.css'
 const RenderTools = (props) => {
   const [currentTooltip, setTooltip] = useState(null)
   useEffect( () => {
@@ -9,8 +9,9 @@ const RenderTools = (props) => {
       currentTooltip.style.display = 'none'
   }, [props])
   function onclick (event){
-    let targetTooltip = event.target.querySelector('div')
-    if (targetTooltip){
+    if (event.target.tagName === 'SPAN'){
+      let targetTooltip = event.target.parentNode.children[1]
+    if (targetTooltip && targetTooltip.tagName === "DIV"){
       if (targetTooltip.children.length >= 1){
         if (currentTooltip)
           currentTooltip.style.display = 'none'
@@ -21,10 +22,11 @@ const RenderTools = (props) => {
           setTooltip(targetTooltip)
         }
     }
-   }
+  }
+}
 }
   return (
-    <div onClick={onclick}>{createTools(props.tool)}</div>
+    <div onClick={onclick}>{createTools(props.tool, [s.li, s.main_li])}</div>
   )
 }
 export default RenderTools

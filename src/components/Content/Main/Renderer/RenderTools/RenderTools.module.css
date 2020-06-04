@@ -1,0 +1,10 @@
+.li{
+  margin-left: 25px;
+  list-style-type: " - ";
+  font-weight: 300;
+  width: fit-content;
+}
+.main_li{
+  margin-left: 25px;
+  list-style-type: disc;
+}

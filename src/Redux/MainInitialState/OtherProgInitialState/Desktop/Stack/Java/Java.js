@@ -3,10 +3,7 @@ import { JavaTool, Spring } from './ToolsData';
 
 const Java = {
 	name: "Java(Spring)",
-	links: [{
-		name: 'Изучение синтаксиса и особенностей С++',
-		target: "https://tproger.ru/books/cpp-books-beginners"
-	}],
+	links: [],
 	children: [Git, Paradigms, Spring, JavaTool],
 	conclusion: "Java это отличное решение для десктопной разработки, позволяет создавать кроссплатформенные игры и приложения.",
 }

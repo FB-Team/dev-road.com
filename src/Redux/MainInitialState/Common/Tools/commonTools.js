@@ -20,12 +20,25 @@ export const GitHub = {
   ],
   children: []
 }
-
-export const GetGitGub = links => {
+export const DB = {
+  name: 'Базы данных',
+  links: [
+    {
+      name: 'Что такое база данных',
+      target: 'https://htmlacademy.ru/tutorial/php/databases'
+    },
+    {
+      name: 'SQL запросы',
+      target: 'https://habr.com/ru/post/480838/'
+    }
+  ],
+  children: []
+}
+export const GetObjectLinks = (object, links) => {
   if (Array.isArray(links))
-    return {...GitHub, links: [...GitHub.links, ...links]}
+    return {...object, links: [...object.links, ...links]}
   else
-    return {...GitHub, links: [...GitHub.links, links]}
+    return {...object, links: [...object.links, links]}
 }
 
 
