@@ -11,7 +11,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: black;
-  #background-image: url('https://www.app-invest.com.ua/wp-content/uploads/2018/02/post_it_razvitie_kompanii.png');
+  background-color: #f8fafa;
 
 }
 body:after{

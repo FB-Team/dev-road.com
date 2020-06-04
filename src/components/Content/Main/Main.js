@@ -1,14 +1,21 @@
-import React from 'react'
+import {Route, Switch, Redirect} from 'react-router-dom'
 import {connect} from 'react-redux'
-import {Route} from 'react-router-dom'
+import React from 'react'
+
 import {jump} from '../../../Redux/actions.js'
 import RendererContainer from './Renderer/RendererContainer'
 
+
 const Main = ({pathesArray, ...props}) => {
   return (
-    <Route exact path={pathesArray}>
-      <RendererContainer {...props}/>
-    </Route>
+    <Switch>
+      <Route exact path={pathesArray}>
+        <RendererContainer {...props}/>
+      </Route>
+      <Route>
+        <Redirect to="/404"/>
+      </Route>
+    </Switch>
 )}
 function mapStateToProps(state){
   return{
