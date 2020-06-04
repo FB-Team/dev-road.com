@@ -10,14 +10,7 @@ export const WPF = {
     },
     {
       name: 'Metanit',
-      target: 'https://metanit.com/sharp/'
-    },
-    {
-      name: 'C# 8.0 Карманный справочник',
-      target: 'http://radiosit.ru/news/c_8_0_karmannyj_spravochnik/2020-03-08-8746'
-    },{
-      name: 'Документация',
-      target: 'https://docs.microsoft.com/ru-ru/dotnet/csharp/'
+      target: 'https://metanit.com/sharp/wpf/'
     }
   ],
   children: []
