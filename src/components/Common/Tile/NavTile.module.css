@@ -8,3 +8,17 @@
 .link:last-child {
   margin-right: 0;
 }
+
+.link:focus {
+  color: white;
+}
+
+.link:focus > div > div:nth-child(1),
+.link:focus > div > div:nth-child(3){
+  background-color: var(--background-color);
+}
+
+.link:focus > div > div:nth-child(2) img{
+  transform: scale(1.15);
+  transition: transform 0.5s;
+}
