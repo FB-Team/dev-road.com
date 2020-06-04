@@ -19,5 +19,10 @@ p{
 }
 .horizontal-flex{
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
+}
+
+.horizontal-flex-center {
+  display: flex;
+  justify-content: center;
 }

@@ -6,11 +6,9 @@ import RendererContainer from './Renderer/RendererContainer'
 
 const Main = ({pathesArray, ...props}) => {
   return (
-    <>
-      <Route exact path={pathesArray}>
-        <RendererContainer {...props}/>
-      </Route>
-    </>
+    <Route exact path={pathesArray}>
+      <RendererContainer {...props}/>
+    </Route>
 )}
 function mapStateToProps(state){
   return{

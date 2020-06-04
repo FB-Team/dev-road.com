@@ -4,7 +4,7 @@ import NavTile from 'components/Common/Tile/NavTile';
 import s from './RenderTiles.module.css'
 
 
-const RenderTiles = React.memo(props => {
+const RenderTiles = React.memo( props => {
   let delayIncrement = -0.2;
   let NavTiles = props.component.children
     .map((child, i) => <div key={child.meta.id}

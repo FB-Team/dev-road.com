@@ -21,5 +21,6 @@ const FIRST_CHILD = 0
 </div>
   )
 }
+// TODO: Fix styling bug, find an app font size, change buttons& elements view 
 
 export default Tools

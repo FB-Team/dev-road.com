@@ -9,7 +9,7 @@
 
 .NavTile a > div {
   width: 200px;
-  height: 270px;
+  height: 250px;
 }
 
 .NavTile a > div{
@@ -26,6 +26,10 @@
   text-align: center;
   margin-bottom: 10px;
   font-size: 1.2rem;
+}
+
+.NavTile a > div > div:nth-child(1) {
+  height: 50px;
 }
 
 .NavTile a > div > div:nth-child(2) {

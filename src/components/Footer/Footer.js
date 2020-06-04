@@ -21,3 +21,4 @@ class Footer extends React.Component{
   }
 }
 export default Footer
+// TODO: ADD EMAIL AND GIT
