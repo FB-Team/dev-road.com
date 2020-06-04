@@ -28,7 +28,6 @@ const PopularQuest = (props) => {
     let curElem = e.target;
     if (curElem.tagName !== "SUMMARY")
      return;
-    debugger;
     curElem = curElem.parentElement;
     if (! curElem.open) {
       if(ClickedQuestionElem != null)
