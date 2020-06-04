@@ -25,7 +25,11 @@ const PopularQuest = (props) => {
   let ClickedQuestionElem = null;
 
   const onQuestClick = e => {
-    let curElem = e.currentTarget.parentElement;
+    let curElem = e.target;
+    if (curElem.tagName !== "SUMMARY")
+     return;
+    debugger;
+    curElem = curElem.parentElement;
     if (! curElem.open) {
       if(ClickedQuestionElem != null)
         ClickedQuestionElem.open = false;
@@ -37,7 +41,7 @@ const PopularQuest = (props) => {
 
   let questions = props.questions.map( q => {
     return <details className={s.questionWithAnswer} key={q.name}>
-      <summary onClick={onQuestClick}>{q.name}</summary>
+      <summary>{q.name}</summary>
       <div>{q.target}</div>
     </details>
   })
@@ -45,7 +49,9 @@ const PopularQuest = (props) => {
   return (
     <div className={s.PopularQuest}>
       <div className={s.title}>Часто задаваемые вопросы:</div>
-      <div className={s.questionWithAnswerContainer}>{questions}</div>
+      <div className={s.questionWithAnswerContainer} onClick={onQuestClick}>
+        {questions}
+      </div>
     </div>
   )
 };

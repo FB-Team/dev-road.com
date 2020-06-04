@@ -4,7 +4,7 @@ import GitHubLogo from 'assets/img/GitHub-Mark-Light-32px.png'
 import MailLogo from 'assets/img/New_Logo_Gmail.svg'
 
 const GITHUB_PAGE = "https://github.com/Leonmisha/dev-road.com";
-const EMAIL = "pylkevychmykhailo@gmail.com"
+const EMAIL = "team.mpkr@gmail.com";
 
 const FREECODECAMP_LINK = "https://www.freecodecamp.org/";
 const CODEWARS_LINK = "https://www.codewars.com/";
