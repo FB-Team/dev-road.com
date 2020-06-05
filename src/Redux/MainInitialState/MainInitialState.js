@@ -39,11 +39,10 @@ const addParents = root => {
 
 const addImagePath = root => {
 	const addImagePathHelper = (curObj) => {
-		curObj.data.imgPath =     `./img/${curObj.meta.id}.png`
+		curObj.data.imgPath =     `assets/img/categories/${curObj.meta.id}.png`
 		if (curObj.children.length === 0){
-			curObj.data.expanded.imgPath = `./img/${curObj.meta.id}Expanded.png`
+			curObj.data.expanded.imgPath = `assets/img/categoriesExpanded/${curObj.meta.id}Expanded.png`
 		}
-		// Работает относительно пути файла, в который вставляется посредством require... нельзя выйти с папки назад, только вперед
 		if (curObj.children.length > 0) {
 			curObj.children.forEach(child => {
 				addImagePathHelper(child)

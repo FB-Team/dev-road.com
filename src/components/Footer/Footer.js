@@ -1,7 +1,7 @@
 import React from 'react'
 import s from './Footer.module.css'
-import GitHubLogo from 'assets/img/GitHub-Mark-Light-32px.png'
-import MailLogo from 'assets/img/New_Logo_Gmail.svg'
+import GitHubLogo from 'assets/img/common/GitHub-Mark-Light-32px.png'
+import MailLogo from 'assets/img/common/New_Logo_Gmail.svg'
 
 const GITHUB_PAGE = "https://github.com/Leonmisha/dev-road.com";
 const EMAIL = "team.mpkr@gmail.com";
