@@ -19,4 +19,8 @@
 }
 .imageWrapper{
   height: var(--imgHeight, 300px);
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

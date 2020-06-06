@@ -1,10 +1,10 @@
+import Preloader from 'components/Common/Preloader/Preloader';
+
 import React, {useState, useEffect} from 'react'
 
 import s from './Introduction.module.css';
 import ReactHtmlParser from 'react-html-parser';
 
-// const LOCAL_DEPTH = 6;
-// const WAY_TO_SRC = "../".repeat(LOCAL_DEPTH);
 
 const Introduction = (props) => {
 
@@ -25,9 +25,11 @@ const Introduction = (props) => {
 		description = `<p>${description}</p>`
 	}
 	description = ReactHtmlParser(description)
+	const Image = imgSrc ? <img className={s.image} src={imgSrc} alt="Соответствует теме раздела"/> : <Preloader/>
+
   return (<div id='Introduction'>
 		<div className={s.title}>{props.title}</div>
-		<div className={s.imageWrapper}><img className={s.image} src={imgSrc} alt="Соответствует теме раздела"/></div>
+		<div className={s.imageWrapper}>{Image}</div>
 		<div className={s.description}>{description}</div>
 	</div>)
 }

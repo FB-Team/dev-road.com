@@ -32,6 +32,9 @@
 .profimg{
   height: 300px;
   overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .profimg img {
  width: 100%;
@@ -40,12 +43,6 @@
  transition: transform 0.5s;
  backface-visibility: hidden;
 }
-
-/* .profimg > div {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-} */
 
 .profdesc {
   background-color: var(--main-color-2);
