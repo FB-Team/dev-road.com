@@ -8,7 +8,7 @@ import store from './Redux/mainRedux.js'
 import { HashRouter as Router } from 'react-router-dom';
 ReactDOM.render(
   <React.StrictMode>
-    <Router basename={process.env.PUBLIC_URL}>
+    <Router>
       <Provider store={store}>
         <App />
       </Provider>
