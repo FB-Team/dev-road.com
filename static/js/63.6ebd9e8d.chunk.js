@@ -1,2 +1,0 @@
-(this["webpackJsonpdev-roadmap.com"]=this["webpackJsonpdev-roadmap.com"]||[]).push([[63],{261:function(p,e,a){p.exports=a.p+"static/media/QAEngeneer.73f29604.png"}}]);
-//# sourceMappingURL=63.6ebd9e8d.chunk.js.map
