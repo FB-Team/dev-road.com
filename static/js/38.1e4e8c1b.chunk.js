@@ -1,0 +1,2 @@
+(this["webpackJsonpdev-roadmap.com"]=this["webpackJsonpdev-roadmap.com"]||[]).push([[38],{302:function(p,o,a){p.exports=a.p+"static/media/Fronted.57db0053.png"}}]);
+//# sourceMappingURL=38.1e4e8c1b.chunk.js.map

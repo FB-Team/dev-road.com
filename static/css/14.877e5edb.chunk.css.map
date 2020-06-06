@@ -1,0 +1,1 @@
+{"version":3,"sources":["Sidebar.module.css"],"names":[],"mappings":"AAAA,wBACE,MAAS,CACT,eAAgB,CAChB,WAAY,CACZ,wBACF","file":"14.877e5edb.chunk.css","sourcesContent":["#Sidebar{\r\n  left: 0px;\r\n  min-width: 300px;\r\n  grid-area: s;\r\n  background-color: inherit;\r\n}\r\n"]}
