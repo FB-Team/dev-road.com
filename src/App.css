@@ -1,6 +1,6 @@
 .App {
   display: grid;
-  grid-template-areas: "h h"
-                       "s c"
-                       "f f"
+  grid-template-areas: "h"
+                       "c"
+                       "f"
 }

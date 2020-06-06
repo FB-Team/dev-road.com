@@ -1,3 +1,4 @@
+
 .linksWrapper{
   position: absolute;
   display: none;
@@ -33,7 +34,7 @@
   background-color: var(--main-color-2);
   color: white;
   border-radius: 5px;
-  cursor:alias;
+  cursor:pointer;
 }
 
 .link:hover{

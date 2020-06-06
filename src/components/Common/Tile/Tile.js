@@ -14,7 +14,7 @@ const Tile = (props) => {
 			}
 			console.log(e.message);
 		})
-	}, [props.profimg, setImgSrc])
+	}, [props.profimg])
 
 	const parsedDelay = props.delay + 's'
 

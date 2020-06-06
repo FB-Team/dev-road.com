@@ -6,12 +6,7 @@ import Cocos from './Cocos';
 
 const CocosBranch = {
   name: 'Cocos',
-  links: [
-    {/*
-      name: 'Онлайн курсы по Cocos',
-      target: 'https://Cocos.com/ru/learn/partner-courses'
-    */}
-  ],
+  links: [],
   children: [CPlus,Cocos],
 	conclusion: 'Используется для разработки 2D игр, бесплатный и очень эффективный инструмент, однако, на качественное освоение С++ и Cocos может потребоваться время.'
 }

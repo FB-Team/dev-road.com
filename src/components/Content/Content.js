@@ -7,10 +7,9 @@ import s from './Content.module.css'
 const Content = props => {
   return (
     <div id={s.Content}>
-    <Introduction />
-    <Main />
+      <Introduction />
+      <Main />
     </div>
   )
 }
 export default Content
-// TODO: ADD 404 PAGE +-

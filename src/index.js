@@ -5,10 +5,10 @@ import App from './App.js'
 import * as serviceWorker from './serviceWorker'
 import {Provider} from 'react-redux'
 import store from './Redux/mainRedux.js'
-import { BrowserRouter as Router } from 'react-router-dom';
+import { HashRouter as Router } from 'react-router-dom';
 ReactDOM.render(
   <React.StrictMode>
-    <Router>
+    <Router basename={process.env.PUBLIC_URL}>
       <Provider store={store}>
         <App />
       </Provider>

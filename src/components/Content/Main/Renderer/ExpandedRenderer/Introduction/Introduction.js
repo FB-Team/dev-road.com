@@ -18,7 +18,7 @@ const Introduction = (props) => {
 			}
 			console.log(e.message);
 		})
-	}, [props.imgPath, setImgSrc])
+	}, [props.imgPath])
 
 	let description = props.description
 	if (!description.startsWith("<p>")) {
@@ -27,7 +27,7 @@ const Introduction = (props) => {
 	description = ReactHtmlParser(description)
   return (<div id='Introduction'>
 		<div className={s.title}>{props.title}</div>
-		<div className={s.imageWrapper}><img className={s.image} src={imgSrc} alt="Server error, cannot load an image:-("/></div>
+		<div className={s.imageWrapper}><img className={s.image} src={imgSrc} alt="Соответствует теме раздела"/></div>
 		<div className={s.description}>{description}</div>
 	</div>)
 }

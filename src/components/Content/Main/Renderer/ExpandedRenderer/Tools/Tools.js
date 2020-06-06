@@ -11,7 +11,7 @@ const FIRST_CHILD = 0
      setTool(props.tools[event.target.dataset.number])
    }
    const buttons = props.tools.map(
-     (button, i) => <button key={i} data-number={i} className={s.button} onClick={handleClick}>{button.name}</button>
+     (button, i) => <button key={i} data-number={i} className={`${s.button} ${button === currentTool ? s.active : ""}`} onClick={handleClick}>{button.name}</button>
    )
   return (
 <div id={s.Tools}>
@@ -21,5 +21,4 @@ const FIRST_CHILD = 0
 </div>
   )
 }
-// TODO: Fix styling bug, find an app font size, change buttons& elements view , add cros
 export default Tools

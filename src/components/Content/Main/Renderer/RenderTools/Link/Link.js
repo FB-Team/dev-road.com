@@ -1,10 +1,10 @@
 import React from 'react';
-import { useState } from 'react'
+//import { useState } from 'react'
 import s from './Link.module.css';
 const LINKS = 'LINKS'
 const TOOLTIP = 'TOOLTIP'
 const  Link = (props) =>{
-  const [tooltipVisibility, setTooltipVisibility] = useState(false)
+  //const [tooltipVisibility, setTooltipVisibility] = useState(false)
   let links = null
   if (props.hasOwnProperty('links'))
     if (props.links.length > 0)

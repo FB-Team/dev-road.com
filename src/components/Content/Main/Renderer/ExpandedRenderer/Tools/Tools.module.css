@@ -14,9 +14,10 @@ margin-left: 40px;
   margin-right: 2px;
   padding: 4px;
 }
-.button:hover{
+.button:hover,
+.button:focus {
   background-color: var(--main-color-2);
 }
-.button:focus{
+.button.active {
   background-color: var(--main-color-2);
 }
