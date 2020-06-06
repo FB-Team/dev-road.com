@@ -41,6 +41,12 @@
  backface-visibility: hidden;
 }
 
+/* .profimg > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} */
+
 .profdesc {
   background-color: var(--main-color-2);
   color: white;

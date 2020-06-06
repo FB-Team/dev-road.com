@@ -1,6 +1,10 @@
 import React, { useState, useEffect } from 'react'
-import s from './Tile.module.css'
+
 import { StyledTile } from './StyledTile'
+import Preloader from '../Preloader/Preloader';
+import s from './Tile.module.css'
+
+
 
 const Tile = (props) => {
 
@@ -18,14 +22,13 @@ const Tile = (props) => {
 
 	const parsedDelay = props.delay + 's'
 
+	const Image = imgSrc ?	<img src={imgSrc} alt=""/> : <Preloader/>
+
 	return (<StyledTile delay={parsedDelay} className={s.Tile}>
 		<div className={s.proftitle}>
 			{props.proftitle}
 		</div>
-		{ props.profimg ? <div className={s.profimg}>
-			<img src={imgSrc} alt=""/>
-		</div> : <></>
-		}
+		<div className={s.profimg}>{Image}</div>
 		{ props.profdesc ? <div className={s.profdesc}>{props.profdesc}</div>
 		: <></>
 		}
