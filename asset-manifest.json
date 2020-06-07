@@ -23,8 +23,8 @@
     "static/js/9.f45cf587.chunk.js": "/dev-road.com/static/js/9.f45cf587.chunk.js",
     "static/js/9.f45cf587.chunk.js.map": "/dev-road.com/static/js/9.f45cf587.chunk.js.map",
     "main.css": "/dev-road.com/static/css/main.ffc216d9.chunk.css",
-    "main.js": "/dev-road.com/static/js/main.fff225d0.chunk.js",
-    "main.js.map": "/dev-road.com/static/js/main.fff225d0.chunk.js.map",
+    "main.js": "/dev-road.com/static/js/main.a1fec35f.chunk.js",
+    "main.js.map": "/dev-road.com/static/js/main.a1fec35f.chunk.js.map",
     "runtime-main.js": "/dev-road.com/static/js/runtime-main.c2d8ee69.js",
     "runtime-main.js.map": "/dev-road.com/static/js/runtime-main.c2d8ee69.js.map",
     "static/js/12.cbfe0992.chunk.js": "/dev-road.com/static/js/12.cbfe0992.chunk.js",
@@ -187,7 +187,7 @@
     "static/js/89.ebc960bf.chunk.js": "/dev-road.com/static/js/89.ebc960bf.chunk.js",
     "static/js/89.ebc960bf.chunk.js.map": "/dev-road.com/static/js/89.ebc960bf.chunk.js.map",
     "index.html": "/dev-road.com/index.html",
-    "precache-manifest.05524add09b773aef3062585d7a74393.js": "/dev-road.com/precache-manifest.05524add09b773aef3062585d7a74393.js",
+    "precache-manifest.f413a0efea15fc7de747a5e8730a6a88.js": "/dev-road.com/precache-manifest.f413a0efea15fc7de747a5e8730a6a88.js",
     "service-worker.js": "/dev-road.com/service-worker.js",
     "static/css/13.8f0b54bd.chunk.css.map": "/dev-road.com/static/css/13.8f0b54bd.chunk.css.map",
     "static/css/14.877e5edb.chunk.css.map": "/dev-road.com/static/css/14.877e5edb.chunk.css.map",
@@ -273,6 +273,6 @@
     "static/js/runtime-main.c2d8ee69.js",
     "static/js/12.cbfe0992.chunk.js",
     "static/css/main.ffc216d9.chunk.css",
-    "static/js/main.fff225d0.chunk.js"
+    "static/js/main.a1fec35f.chunk.js"
   ]
 }
