@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 
 import Introduction from './Introduction/Introduction';
 import ProfsAlike from './ProfsAlike/ProfsAlike';
@@ -29,6 +29,10 @@ const RenderExpanded = (props) => {
 		}
 	}
 	let expanded = props.component.data.expanded
+	useEffect( ()=> {
+		document.title = `${props.component.data.proftitle} - Roadmap4devs`
+	}, [props.component.data.proftitle])
+
 	return (<div id='rendererExpanded' onClick={onclickTools}>
 		<Introduction title={props.component.data.proftitle} imgPath={expanded.imgPath} description={expanded.desc}/>
 		<Tools tools={expanded.tools}/>

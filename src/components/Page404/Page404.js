@@ -5,6 +5,7 @@ import s from './Page404.module.css'
 
 
 const Page404 = props => {
+  document.title = `Страница не найдена - Roadmap4devs`
   return (
     <div id={s.Page404}>
       <div><span className={s.red}>Ошибка 404.</span> Страница не найдена.<br/>Перейти на <div className={s.linkWrapper}><Link to="/">главную страницу</Link></div></div>

@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 
 import NavTile from 'components/Common/Tile/NavTile';
 import s from './RenderTiles.module.css'
@@ -17,6 +17,13 @@ const RenderTiles = React.memo( props => {
                              profimg={child.data.imgPath}/>
                   </div>
   )
+  useEffect( ()=> {
+    if (props.component.data.proftitle === "Главная")
+      document.title = `Roadmap4devs - Выбор профессии разработчика`
+    else
+      document.title = `${props.component.data.proftitle} - Roadmap4devs`
+  }, [props.component.data.proftitle])
+
     return (
   <div id='rendererTiles' className="horizontal-flex">{NavTiles}</div>
     )
