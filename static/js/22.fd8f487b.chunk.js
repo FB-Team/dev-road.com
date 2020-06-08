@@ -1,2 +1,0 @@
-(this["webpackJsonpdev-roadmap.com"]=this["webpackJsonpdev-roadmap.com"]||[]).push([[22],{326:function(o,p,a){o.exports=a.p+"static/media/logo.5d5d9eef.svg"}}]);
-//# sourceMappingURL=22.fd8f487b.chunk.js.map

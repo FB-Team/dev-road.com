@@ -1,1 +1,0 @@
-{"version":3,"sources":["start_server.bat"],"names":["module","exports"],"mappings":"8GAAAA,EAAOC,QAAU,IAA0B","file":"static/js/23.e7d9e4ef.chunk.js","sourcesContent":["module.exports = __webpack_public_path__ + \"static/media/start_server.8b86e6df.bat\";"],"sourceRoot":""}

@@ -1,0 +1,1 @@
+{"version":3,"sources":["assets/img/common/Spinner-1s-200px.svg"],"names":["module","exports"],"mappings":"8GAAAA,EAAOC,QAAU,IAA0B","file":"static/js/20.f2230926.chunk.js","sourcesContent":["module.exports = __webpack_public_path__ + \"static/media/Spinner-1s-200px.d6494b8b.svg\";"],"sourceRoot":""}

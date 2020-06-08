@@ -1,0 +1,2 @@
+(this["webpackJsonpdev-roadmap.com"]=this["webpackJsonpdev-roadmap.com"]||[]).push([[22],{324:function(a,p,o){a.exports=o.p+"static/media/GitHub-Mark.c673e59a.zip"}}]);
+//# sourceMappingURL=22.ad9be27a.chunk.js.map

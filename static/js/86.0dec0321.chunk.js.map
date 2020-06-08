@@ -1,1 +1,0 @@
-{"version":3,"sources":["assets/img/categories/not used/backgroundFrontend.jpg"],"names":["module","exports"],"mappings":"8GAAAA,EAAOC,QAAU,IAA0B","file":"static/js/86.0dec0321.chunk.js","sourcesContent":["module.exports = __webpack_public_path__ + \"static/media/backgroundFrontend.a18b0243.jpg\";"],"sourceRoot":""}

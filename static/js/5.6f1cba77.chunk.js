@@ -1,2 +1,0 @@
-(this["webpackJsonpdev-roadmap.com"]=this["webpackJsonpdev-roadmap.com"]||[]).push([[5],{196:function(e,t,a){"use strict";a.r(t);var n=a(0),c=a.n(n),r=a(487),o=a(59);test("renders learn react link",(function(){var e=(0,Object(r.a)(c.a.createElement(o.default,null)).getByText)(/learn react/i);expect(e).toBeInTheDocument()}))}}]);
-//# sourceMappingURL=5.6f1cba77.chunk.js.map
