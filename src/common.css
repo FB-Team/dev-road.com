@@ -22,6 +22,12 @@ p{
   justify-content: space-around;
 }
 
+.vertical-flex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .horizontal-flex-center {
   display: flex;
   justify-content: center;

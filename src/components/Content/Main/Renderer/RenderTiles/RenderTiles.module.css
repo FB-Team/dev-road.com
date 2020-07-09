@@ -1,3 +1,24 @@
+
 .NavTile{
-  width: 30%;
+  flex: 1;
+  max-width: 500px;
+  margin-right: 50px;
+}
+
+.NavTile:nth-last-child(1) {
+  margin-right: 0;
+}
+
+@media only screen and (max-width: 1024px) {
+  #rendererTiles {
+    flex-direction: column;
+    width: max-content;
+    margin: 0 auto;
+  }
+  .NavTile {
+    margin: 25px 0;
+  }
+  .NavTile:nth-last-child(1) {
+    margin-bottom: 0;
+  }
 }

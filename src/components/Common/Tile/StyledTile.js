@@ -14,7 +14,7 @@ export const StyledTile = styled.div `
   position: relative;
   opacity: 0;
   animation: ${tileload} 1s cubic-bezier(0.42, 0.0, 0.58, 1.0);
-  animation-delay: $(props => props.parsedDelay);
+  animation-delay: ${props => props.delay};
   animation-fill-mode: forwards;
   transition: transform 0.5s;
 `;

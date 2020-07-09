@@ -2,7 +2,8 @@
   position: relative;
   display: inline;
   grid-area: c;
-  padding: 0 8% 100px;
+  padding: 0 8% 20px;
+  min-height: calc(100vh - 100px - 67px);
   background-color: #f8fafa;
 }
 /* #Content:after{

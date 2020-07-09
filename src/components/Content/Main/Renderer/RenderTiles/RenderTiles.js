@@ -25,7 +25,7 @@ const RenderTiles = React.memo( props => {
   }, [props.component.data.proftitle])
 
     return (
-  <div id='rendererTiles' className="horizontal-flex">{NavTiles}</div>
+  <div id={s.rendererTiles} className="horizontal-flex">{NavTiles}</div>
     )
 })
 

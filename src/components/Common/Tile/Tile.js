@@ -20,7 +20,7 @@ const Tile = (props) => {
 		})
 	}, [props.profimg])
 
-	const parsedDelay = props.delay + 's'
+	const parsedDelay = parseFloat(props.delay).toFixed(1) + 's'
 
 	const Image = imgSrc ?	<img src={imgSrc} alt=""/> : <Preloader/>
 

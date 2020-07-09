@@ -4,6 +4,8 @@
   padding: 0px;
   height: 100%;
   margin: 0px;
+  display: flex;
+  flex-direction: column;
 }
 
 
@@ -29,13 +31,20 @@
   color: white;
   background-color: var(--main-color-2);
 }
-.profimg{
+.profimg {
   height: 300px;
   overflow: hidden;
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
+@media only screen and (max-width: 1280px) and (min-width: 1025px) {
+  .profimg {
+    height: 200px;
+  }
+}
+
 .profimg img {
  width: 100%;
  height: 100%;
@@ -47,8 +56,7 @@
 .profdesc {
   background-color: var(--main-color-2);
   color: white;
-  height: 100px;
-  padding: 10px;
+  flex: 1;
 }
 
 .profdesc,
@@ -58,4 +66,5 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 10px;
 }
